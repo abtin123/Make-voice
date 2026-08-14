@@ -1,0 +1,2002 @@
+{
+  "turn_left": {
+    "fa": "به چپ بپیچید",
+    "en": "Turn left",
+    "ar": "انعطف يسارًا",
+    "tr": "Sola dönün",
+    "de": "Links abbiegen",
+    "fr": "Tournez à gauche",
+    "es": "Gire a la izquierda",
+    "ru": "Поверните налево"
+  },
+  "turn_right": {
+    "fa": "به راست بپیچید",
+    "en": "Turn right",
+    "ar": "انعطف يمينًا",
+    "tr": "Sağa dönün",
+    "de": "Rechts abbiegen",
+    "fr": "Tournez à droite",
+    "es": "Gire a la derecha",
+    "ru": "Поверните направо"
+  },
+  "turn_slight_left": {
+    "fa": "کمی به چپ بپیچید",
+    "en": "Turn slightly left",
+    "ar": "انعطف قليلاً إلى اليسار",
+    "tr": "Hafif sola dönün",
+    "de": "Leicht links abbiegen",
+    "fr": "Tournez légèrement à gauche",
+    "es": "Gire ligeramente a la izquierda",
+    "ru": "Слегка поверните налево"
+  },
+  "turn_slight_right": {
+    "fa": "کمی به راست بپیچید",
+    "en": "Turn slightly right",
+    "ar": "انعطف قليلاً إلى اليمين",
+    "tr": "Hafif sağa dönün",
+    "de": "Leicht rechts abbiegen",
+    "fr": "Tournez légèrement à droite",
+    "es": "Gire ligeramente a la derecha",
+    "ru": "Слегка поверните направо"
+  },
+  "turn_sharp_left": {
+    "fa": "به شدت به چپ بپیچید",
+    "en": "Turn sharply left",
+    "ar": "انعطف بحدة إلى اليسار",
+    "tr": "Keskin şekilde sola dönün",
+    "de": "Scharf links abbiegen",
+    "fr": "Tournez fortement à gauche",
+    "es": "Gire bruscamente a la izquierda",
+    "ru": "Резко поверните налево"
+  },
+  "turn_sharp_right": {
+    "fa": "به شدت به راست بپیچید",
+    "en": "Turn sharply right",
+    "ar": "انعطف بحدة إلى اليمين",
+    "tr": "Keskin şekilde sağa dönün",
+    "de": "Scharf rechts abbiegen",
+    "fr": "Tournez fortement à droite",
+    "es": "Gire bruscamente a la derecha",
+    "ru": "Резко поверните направо"
+  },
+  "continue_straight": {
+    "fa": "مستقیم ادامه دهید",
+    "en": "Continue straight",
+    "ar": "تابع السير مستقيمًا",
+    "tr": "Düz devam edin",
+    "de": "Geradeaus weiterfahren",
+    "fr": "Continuez tout droit",
+    "es": "Continúe recto",
+    "ru": "Продолжайте движение прямо"
+  },
+  "u_turn": {
+    "fa": "دور بزنید",
+    "en": "Make a U-turn",
+    "ar": "قم بالدوران للخلف",
+    "tr": "U dönüşü yapın",
+    "de": "Wenden Sie",
+    "fr": "Faites demi-tour",
+    "es": "Haga un cambio de sentido",
+    "ru": "Развернитесь"
+  },
+  "u_turn_when_possible": {
+    "fa": "در اولین فرصت دور بزنید",
+    "en": "Make a U-turn when possible",
+    "ar": "قم بالدوران للخلف عند أول فرصة",
+    "tr": "Mümkün olduğunda U dönüşü yapın",
+    "de": "Wenden Sie bei nächster Gelegenheit",
+    "fr": "Faites demi-tour dès que possible",
+    "es": "Haga un cambio de sentido cuando sea posible",
+    "ru": "Развернитесь при первой возможности"
+  },
+  "turn_left_in_dist_m": {
+    "fa": "در {distance} متر دیگر به چپ بپیچید",
+    "en": "In {distance} meters, turn left",
+    "ar": "بعد {distance} أمتار، انعطف يسارًا",
+    "tr": "{distance} metre sonra sola dönün",
+    "de": "In {distance} Metern links abbiegen",
+    "fr": "Dans {distance} mètres, tournez à gauche",
+    "es": "En {distance} metros, gire a la izquierda",
+    "ru": "Через {distance} метров поверните налево"
+  },
+  "turn_right_in_dist_m": {
+    "fa": "در {distance} متر دیگر به راست بپیچید",
+    "en": "In {distance} meters, turn right",
+    "ar": "بعد {distance} أمتار، انعطف يمينًا",
+    "tr": "{distance} metre sonra sağa dönün",
+    "de": "In {distance} Metern rechts abbiegen",
+    "fr": "Dans {distance} mètres, tournez à droite",
+    "es": "En {distance} metros, gire a la derecha",
+    "ru": "Через {distance} метров поверните направо"
+  },
+  "turn_left_in_dist_km": {
+    "fa": "در {distance} کیلومتر دیگر به چپ بپیچید",
+    "en": "In {distance} kilometers, turn left",
+    "ar": "بعد {distance} كيلومترات، انعطف يسارًا",
+    "tr": "{distance} kilometre sonra sola dönün",
+    "de": "In {distance} Kilometern links abbiegen",
+    "fr": "Dans {distance} kilomètres, tournez à gauche",
+    "es": "En {distance} kilómetros, gire a la izquierda",
+    "ru": "Через {distance} километров поверните налево"
+  },
+  "turn_right_in_dist_km": {
+    "fa": "در {distance} کیلومتر دیگر به راست بپیچید",
+    "en": "In {distance} kilometers, turn right",
+    "ar": "بعد {distance} كيلومترات، انعطف يمينًا",
+    "tr": "{distance} kilometre sonra sağa dönün",
+    "de": "In {distance} Kilometern rechts abbiegen",
+    "fr": "Dans {distance} kilomètres, tournez à droite",
+    "es": "En {distance} kilómetros, gire a la derecha",
+    "ru": "Через {distance} километров поверните направо"
+  },
+  "turn_left_in_dist_ft": {
+    "fa": "در {distance} فوت دیگر به چپ بپیچید",
+    "en": "In {distance} feet, turn left",
+    "ar": "بعد {distance} قدمًا، انعطف يسارًا",
+    "tr": "{distance} fit sonra sola dönün",
+    "de": "In {distance} Fuß links abbiegen",
+    "fr": "Dans {distance} pieds, tournez à gauche",
+    "es": "En {distance} pies, gire a la izquierda",
+    "ru": "Через {distance} футов поверните налево"
+  },
+  "turn_right_in_dist_ft": {
+    "fa": "در {distance} فوت دیگر به راست بپیچید",
+    "en": "In {distance} feet, turn right",
+    "ar": "بعد {distance} قدمًا، انعطف يمينًا",
+    "tr": "{distance} fit sonra sağa dönün",
+    "de": "In {distance} Fuß rechts abbiegen",
+    "fr": "Dans {distance} pieds, tournez à droite",
+    "es": "En {distance} pies, gire a la derecha",
+    "ru": "Через {distance} футов поверните направо"
+  },
+  "turn_left_in_dist_mi": {
+    "fa": "در {distance} مایل دیگر به چپ بپیچید",
+    "en": "In {distance} miles, turn left",
+    "ar": "بعد {distance} أميال، انعطف يسارًا",
+    "tr": "{distance} mil sonra sola dönün",
+    "de": "In {distance} Meilen links abbiegen",
+    "fr": "Dans {distance} miles, tournez à gauche",
+    "es": "En {distance} millas, gire a la izquierda",
+    "ru": "Через {distance} миль поверните налево"
+  },
+  "turn_right_in_dist_mi": {
+    "fa": "در {distance} مایل دیگر به راست بپیچید",
+    "en": "In {distance} miles, turn right",
+    "ar": "بعد {distance} أميال، انعطف يمينًا",
+    "tr": "{distance} mil sonra sağa dönün",
+    "de": "In {distance} Meilen rechts abbiegen",
+    "fr": "Dans {distance} miles, tournez à droite",
+    "es": "En {distance} millas, gire a la derecha",
+    "ru": "Через {distance} миль поверните направо"
+  },
+  "keep_left": {
+    "fa": "در مسیر چپ بمانید",
+    "en": "Keep left",
+    "ar": "حافظ على اليسار",
+    "tr": "Soldan devam edin",
+    "de": "Links halten",
+    "fr": "Restez à gauche",
+    "es": "Manténgase a la izquierda",
+    "ru": "Держитесь левее"
+  },
+  "keep_right": {
+    "fa": "در مسیر راست بمانید",
+    "en": "Keep right",
+    "ar": "حافظ على اليمين",
+    "tr": "Sağdan devam edin",
+    "de": "Rechts halten",
+    "fr": "Restez à droite",
+    "es": "Manténgase a la derecha",
+    "ru": "Держитесь правее"
+  },
+  "keep_straight_lane": {
+    "fa": "در لاین وسط بمانید",
+    "en": "Keep straight in the middle lane",
+    "ar": "حافظ على المسار الأوسط",
+    "tr": "Orta şeritte kalın",
+    "de": "Auf der mittleren Spur bleiben",
+    "fr": "Restez sur la voie du milieu",
+    "es": "Manténgase en el carril central",
+    "ru": "Держитесь среднего ряда"
+  },
+  "move_left_now": {
+    "fa": "به لاین چپ بروید",
+    "en": "Move to the left lane",
+    "ar": "انتقل إلى المسار الأيسر",
+    "tr": "Sol şeride geçin",
+    "de": "Wechseln Sie auf die linke Spur",
+    "fr": "Déplacez-vous sur la voie de gauche",
+    "es": "Muévase al carril izquierdo",
+    "ru": "Перестройтесь в левый ряд"
+  },
+  "move_right_now": {
+    "fa": "به لاین راست بروید",
+    "en": "Move to the right lane",
+    "ar": "انتقل إلى المسار الأيمن",
+    "tr": "Sağ şeride geçin",
+    "de": "Wechseln Sie auf die rechte Spur",
+    "fr": "Déplacez-vous sur la voie de droite",
+    "es": "Muévase al carril derecho",
+    "ru": "Перестройтесь в правый ряд"
+  },
+  "prepare_lane_change_left": {
+    "fa": "برای تعویض لاین به چپ آماده شوید",
+    "en": "Prepare to change lanes to the left",
+    "ar": "استعد لتغيير المسار إلى اليسار",
+    "tr": "Sola şerit değiştirmeye hazırlanın",
+    "de": "Bereiten Sie den Spurwechsel nach links vor",
+    "fr": "Préparez-vous à changer de voie à gauche",
+    "es": "Prepárese para cambiar de carril a la izquierda",
+    "ru": "Приготовьтесь перестроиться налево"
+  },
+  "prepare_lane_change_right": {
+    "fa": "برای تعویض لاین به راست آماده شوید",
+    "en": "Prepare to change lanes to the right",
+    "ar": "استعد لتغيير المسار إلى اليمين",
+    "tr": "Sağa şerit değiştirmeye hazırlanın",
+    "de": "Bereiten Sie den Spurwechsel nach rechts vor",
+    "fr": "Préparez-vous à changer de voie à droite",
+    "es": "Prepárese para cambiar de carril a la derecha",
+    "ru": "Приготовьтесь перестроиться направо"
+  },
+  "roundabout_take_exit_1": {
+    "fa": "در میدان، از خروجی اول خارج شوید",
+    "en": "At the roundabout, take the 1st exit",
+    "ar": "عند الدوار، اسلك المخرج الأول",
+    "tr": "Kavşakta 1. çıkışı kullanın",
+    "de": "Nehmen Sie am Kreisverkehr die 1. Ausfahrt",
+    "fr": "Au rond-point, prenez la 1ère sortie",
+    "es": "En la rotonda, tome la 1ª salida",
+    "ru": "На круговом движении съезжайте на 1-м повороте"
+  },
+  "roundabout_take_exit_2": {
+    "fa": "در میدان، از خروجی دوم خارج شوید",
+    "en": "At the roundabout, take the 2nd exit",
+    "ar": "عند الدوار، اسلك المخرج الثاني",
+    "tr": "Kavşakta 2. çıkışı kullanın",
+    "de": "Nehmen Sie am Kreisverkehr die 2. Ausfahrt",
+    "fr": "Au rond-point, prenez la 2ème sortie",
+    "es": "En la rotonda, tome la 2ª salida",
+    "ru": "На круговом движении съезжайте на 2-м повороте"
+  },
+  "roundabout_take_exit_3": {
+    "fa": "در میدان، از خروجی سوم خارج شوید",
+    "en": "At the roundabout, take the 3rd exit",
+    "ar": "عند الدوار، اسلك المخرج الثالث",
+    "tr": "Kavşakta 3. çıkışı kullanın",
+    "de": "Nehmen Sie am Kreisverkehr die 3. Ausfahrt",
+    "fr": "Au rond-point, prenez la 3ème sortie",
+    "es": "En la rotonda, tome la 3ª salida",
+    "ru": "На круговом движении съезжайте на 3-м повороте"
+  },
+  "roundabout_take_exit_next": {
+    "fa": "در میدان، از خروجی بعدی خارج شوید",
+    "en": "At the roundabout, take the next exit",
+    "ar": "عند الدوار، اسلك المخرج التالي",
+    "tr": "Kavşakta bir sonraki çıkışı kullanın",
+    "de": "Nehmen Sie am Kreisverkehr die nächste Ausfahrt",
+    "fr": "Au rond-point, prenez la prochaine sortie",
+    "es": "En la rotonda, tome la siguiente salida",
+    "ru": "На круговом движении съезжайте на следующем повороте"
+  },
+  "roundabout_enter": {
+    "fa": "وارد میدان شوید",
+    "en": "Enter the roundabout",
+    "ar": "ادخل إلى الدوار",
+    "tr": "Kavşağa girin",
+    "de": "Fahren Sie in den Kreisverkehr",
+    "fr": "Entrez dans le rond-point",
+    "es": "Entre en la rotonda",
+    "ru": "Въезжайте на круговое движение"
+  },
+  "roundabout_continue": {
+    "fa": "در میدان مستقیم ادامه دهید",
+    "en": "Continue through the roundabout",
+    "ar": "تابع السير عبر الدوار",
+    "tr": "Kavşakta düz devam edin",
+    "de": "Fahren Sie geradeaus durch den Kreisverkehr",
+    "fr": "Continuez tout droit dans le rond-point",
+    "es": "Continúe recto en la rotonda",
+    "ru": "Продолжайте движение прямо через круговое движение"
+  },
+  "merge_onto_highway": {
+    "fa": "وارد بزرگراه شوید",
+    "en": "Merge onto the highway",
+    "ar": "ادخل إلى الطريق السريع",
+    "tr": "Otoyola girin",
+    "de": "Auf die Autobahn auffahren",
+    "fr": "Rejoignez l'autoroute",
+    "es": "Incorpórese a la autopista",
+    "ru": "Выезжайте на автомагистраль"
+  },
+  "exit_highway": {
+    "fa": "از بزرگراه خارج شوید",
+    "en": "Exit the highway",
+    "ar": "اخرج من الطريق السريع",
+    "tr": "Otoyoldan çıkın",
+    "de": "Autobahn verlassen",
+    "fr": "Quittez l'autoroute",
+    "es": "Salga de la autopista",
+    "ru": "Съезжайте с автомагистрали"
+  },
+  "exit_highway_in_dist_m": {
+    "fa": "در {distance} متر دیگر از بزرگراه خارج شوید",
+    "en": "In {distance} meters, exit the highway",
+    "ar": "بعد {distance} أمتار، اخرج من الطريق السريع",
+    "tr": "{distance} metre sonra otoyoldan çıkın",
+    "de": "In {distance} Metern die Autobahn verlassen",
+    "fr": "Dans {distance} mètres, quittez l'autoroute",
+    "es": "En {distance} metros, salga de la autopista",
+    "ru": "Через {distance} метров съезжайте с автомагистрали"
+  },
+  "exit_highway_in_dist_km": {
+    "fa": "در {distance} کیلومتر دیگر از بزرگراه خارج شوید",
+    "en": "In {distance} kilometers, exit the highway",
+    "ar": "بعد {distance} كيلومترات، اخرج من الطريق السريع",
+    "tr": "{distance} kilometre sonra otoyoldan çıkın",
+    "de": "In {distance} Kilometern die Autobahn verlassen",
+    "fr": "Dans {distance} kilomètres, quittez l'autoroute",
+    "es": "En {distance} kilómetros, salga de la autopista",
+    "ru": "Через {distance} километров съезжайте с автомагистрали"
+  },
+  "exit_number": {
+    "fa": "از خروجی {number} خارج شوید",
+    "en": "Take exit {number}",
+    "ar": "اسلك المخرج {number}",
+    "tr": "{number} numaralı çıkışı kullanın",
+    "de": "Nehmen Sie Ausfahrt {number}",
+    "fr": "Prenez la sortie {number}",
+    "es": "Tome la salida {number}",
+    "ru": "Съезжайте на выезде {number}"
+  },
+  "stay_on_highway": {
+    "fa": "در بزرگراه بمانید",
+    "en": "Stay on the highway",
+    "ar": "ابق على الطريق السريع",
+    "tr": "Otoyolda kalın",
+    "de": "Bleiben Sie auf der Autobahn",
+    "fr": "Restez sur l'autoroute",
+    "es": "Permanezca en la autopista",
+    "ru": "Оставайтесь на автомагистрали"
+  },
+  "highway_splits_left": {
+    "fa": "بزرگراه دو شاخه می‌شود، در مسیر چپ بمانید",
+    "en": "The highway splits, keep left",
+    "ar": "ينقسم الطريق السريع، حافظ على اليسار",
+    "tr": "Otoyol ikiye ayrılıyor, soldan devam edin",
+    "de": "Die Autobahn teilt sich, links halten",
+    "fr": "L'autoroute se divise, restez à gauche",
+    "es": "La autopista se divide, manténgase a la izquierda",
+    "ru": "Автомагистраль разделяется, держитесь левее"
+  },
+  "highway_splits_right": {
+    "fa": "بزرگراه دو شاخه می‌شود، در مسیر راست بمانید",
+    "en": "The highway splits, keep right",
+    "ar": "ينقسم الطريق السريع، حافظ على اليمين",
+    "tr": "Otoyol ikiye ayrılıyor, sağdan devam edin",
+    "de": "Die Autobahn teilt sich, rechts halten",
+    "fr": "L'autoroute se divise, restez à droite",
+    "es": "La autopista se divide, manténgase a la derecha",
+    "ru": "Автомагистраль разделяется, держитесь правее"
+  },
+  "toll_booth_ahead": {
+    "fa": "باجه عوارضی در مسیر پیش رو",
+    "en": "Toll booth ahead",
+    "ar": "كشك رسوم أمامك",
+    "tr": "İleride gişe var",
+    "de": "Mautstelle voraus",
+    "fr": "Péage à venir",
+    "es": "Cabina de peaje más adelante",
+    "ru": "Впереди пункт оплаты"
+  },
+  "arrive_in_dist_m": {
+    "fa": "{distance} متر تا مقصد باقی مانده",
+    "en": "{distance} meters to destination",
+    "ar": "يبقى {distance} أمتار للوصول",
+    "tr": "Hedefe {distance} metre kaldı",
+    "de": "Noch {distance} Meter bis zum Ziel",
+    "fr": "{distance} mètres avant la destination",
+    "es": "{distance} metros para el destino",
+    "ru": "{distance} метров до пункта назначения"
+  },
+  "arrive_in_dist_km": {
+    "fa": "{distance} کیلومتر تا مقصد باقی مانده",
+    "en": "{distance} kilometers to destination",
+    "ar": "يبقى {distance} كيلومترات للوصول",
+    "tr": "Hedefe {distance} kilometre kaldı",
+    "de": "Noch {distance} Kilometer bis zum Ziel",
+    "fr": "{distance} kilomètres avant la destination",
+    "es": "{distance} kilómetros para el destino",
+    "ru": "{distance} километров до пункта назначения"
+  },
+  "arrive_in_dist_mi": {
+    "fa": "{distance} مایل تا مقصد باقی مانده",
+    "en": "{distance} miles to destination",
+    "ar": "يبقى {distance} أميال للوصول",
+    "tr": "Hedefe {distance} mil kaldı",
+    "de": "Noch {distance} Meilen bis zum Ziel",
+    "fr": "{distance} miles avant la destination",
+    "es": "{distance} millas para el destino",
+    "ru": "{distance} миль до пункта назначения"
+  },
+  "eta_update": {
+    "fa": "زمان تقریبی رسیدن {time} است",
+    "en": "Estimated arrival time is {time}",
+    "ar": "الوقت التقديري للوصول هو {time}",
+    "tr": "Tahmini varış saati {time}",
+    "de": "Voraussichtliche Ankunftszeit ist {time}",
+    "fr": "L'heure d'arrivée estimée est {time}",
+    "es": "La hora estimada de llegada es {time}",
+    "ru": "Ожидаемое время прибытия {time}"
+  },
+  "approaching_destination": {
+    "fa": "به مقصد نزدیک شدید",
+    "en": "You are approaching your destination",
+    "ar": "أنت تقترب من وجهتك",
+    "tr": "Hedefinize yaklaşıyorsunuz",
+    "de": "Sie nähern sich Ihrem Ziel",
+    "fr": "Vous approchez de votre destination",
+    "es": "Se está acercando a su destino",
+    "ru": "Вы приближаетесь к пункту назначения"
+  },
+  "arrived_destination": {
+    "fa": "به مقصد رسیدید",
+    "en": "You have arrived at your destination",
+    "ar": "لقد وصلت إلى وجهتك",
+    "tr": "Hedefinize ulaştınız",
+    "de": "Sie haben Ihr Ziel erreicht",
+    "fr": "Vous êtes arrivé à destination",
+    "es": "Ha llegado a su destino",
+    "ru": "Вы прибыли в пункт назначения"
+  },
+  "destination_on_left": {
+    "fa": "مقصد در سمت چپ است",
+    "en": "Your destination is on the left",
+    "ar": "وجهتك على اليسار",
+    "tr": "Hedefiniz solda",
+    "de": "Ihr Ziel liegt links",
+    "fr": "Votre destination est à gauche",
+    "es": "Su destino está a la izquierda",
+    "ru": "Пункт назначения слева"
+  },
+  "destination_on_right": {
+    "fa": "مقصد در سمت راست است",
+    "en": "Your destination is on the right",
+    "ar": "وجهتك على اليمين",
+    "tr": "Hedefiniz sağda",
+    "de": "Ihr Ziel liegt rechts",
+    "fr": "Votre destination est à droite",
+    "es": "Su destino está a la derecha",
+    "ru": "Пункт назначения справа"
+  },
+  "destination_ahead": {
+    "fa": "مقصد در مسیر پیش رو است",
+    "en": "Your destination is ahead",
+    "ar": "وجهتك أمامك",
+    "tr": "Hedefiniz ileride",
+    "de": "Ihr Ziel liegt voraus",
+    "fr": "Votre destination est devant vous",
+    "es": "Su destino está adelante",
+    "ru": "Пункт назначения впереди"
+  },
+  "start_navigation": {
+    "fa": "مسیریابی آغاز شد",
+    "en": "Navigation started",
+    "ar": "بدأ التنقل",
+    "tr": "Navigasyon başladı",
+    "de": "Navigation gestartet",
+    "fr": "Navigation démarrée",
+    "es": "Navegación iniciada",
+    "ru": "Навигация начата"
+  },
+  "end_navigation": {
+    "fa": "مسیریابی پایان یافت",
+    "en": "Navigation ended",
+    "ar": "انتهى التنقل",
+    "tr": "Navigasyon sona erdi",
+    "de": "Navigation beendet",
+    "fr": "Navigation terminée",
+    "es": "Navegación finalizada",
+    "ru": "Навигация завершена"
+  },
+  "recalculating_route": {
+    "fa": "مسیر در حال محاسبه مجدد است",
+    "en": "Recalculating route",
+    "ar": "جارٍ إعادة حساب المسار",
+    "tr": "Rota yeniden hesaplanıyor",
+    "de": "Route wird neu berechnet",
+    "fr": "Recalcul de l'itinéraire",
+    "es": "Recalculando la ruta",
+    "ru": "Пересчёт маршрута"
+  },
+  "route_found": {
+    "fa": "مسیر جدید یافت شد",
+    "en": "New route found",
+    "ar": "تم العثور على مسار جديد",
+    "tr": "Yeni rota bulundu",
+    "de": "Neue Route gefunden",
+    "fr": "Nouvel itinéraire trouvé",
+    "es": "Nueva ruta encontrada",
+    "ru": "Найден новый маршрут"
+  },
+  "off_route": {
+    "fa": "شما از مسیر خارج شدید",
+    "en": "You are off route",
+    "ar": "لقد خرجت عن المسار",
+    "tr": "Rotadan çıktınız",
+    "de": "Sie haben die Route verlassen",
+    "fr": "Vous êtes hors itinéraire",
+    "es": "Se ha desviado de la ruta",
+    "ru": "Вы отклонились от маршрута"
+  },
+  "back_on_route": {
+    "fa": "به مسیر بازگشتید",
+    "en": "You are back on route",
+    "ar": "لقد عدت إلى المسار",
+    "tr": "Rotaya geri döndünüz",
+    "de": "Sie sind zurück auf der Route",
+    "fr": "Vous êtes de retour sur l'itinéraire",
+    "es": "Ha vuelto a la ruta",
+    "ru": "Вы вернулись на маршрут"
+  },
+  "gps_signal_lost": {
+    "fa": "سیگنال جی‌پی‌اس قطع شد",
+    "en": "GPS signal lost",
+    "ar": "فُقدت إشارة تحديد المواقع",
+    "tr": "GPS sinyali kayboldu",
+    "de": "GPS-Signal verloren",
+    "fr": "Signal GPS perdu",
+    "es": "Señal de GPS perdida",
+    "ru": "Сигнал GPS потерян"
+  },
+  "gps_signal_restored": {
+    "fa": "سیگنال جی‌پی‌اس بازیابی شد",
+    "en": "GPS signal restored",
+    "ar": "تمت استعادة إشارة تحديد المواقع",
+    "tr": "GPS sinyali geri geldi",
+    "de": "GPS-Signal wiederhergestellt",
+    "fr": "Signal GPS rétabli",
+    "es": "Señal de GPS restaurada",
+    "ru": "Сигнал GPS восстановлен"
+  },
+  "route_search_failed": {
+    "fa": "مسیری یافت نشد",
+    "en": "No route found",
+    "ar": "لم يتم العثور على مسار",
+    "tr": "Rota bulunamadı",
+    "de": "Keine Route gefunden",
+    "fr": "Aucun itinéraire trouvé",
+    "es": "No se encontró ninguna ruta",
+    "ru": "Маршрут не найден"
+  },
+  "battery_low": {
+    "fa": "باتری دستگاه کم است",
+    "en": "Device battery is low",
+    "ar": "بطارية الجهاز منخفضة",
+    "tr": "Cihaz pili zayıf",
+    "de": "Akku des Geräts ist schwach",
+    "fr": "Batterie de l'appareil faible",
+    "es": "Batería del dispositivo baja",
+    "ru": "Низкий заряд батареи устройства"
+  },
+  "voice_muted": {
+    "fa": "صدای مسیریاب قطع شد",
+    "en": "Voice guidance muted",
+    "ar": "تم كتم صوت التوجيه",
+    "tr": "Sesli yönlendirme kapatıldı",
+    "de": "Sprachführung stummgeschaltet",
+    "fr": "Guidage vocal désactivé",
+    "es": "Guía de voz silenciada",
+    "ru": "Голосовое сопровождение отключено"
+  },
+  "voice_unmuted": {
+    "fa": "صدای مسیریاب فعال شد",
+    "en": "Voice guidance enabled",
+    "ar": "تم تفعيل صوت التوجيه",
+    "tr": "Sesli yönlendirme açıldı",
+    "de": "Sprachführung aktiviert",
+    "fr": "Guidage vocal activé",
+    "es": "Guía de voz activada",
+    "ru": "Голосовое сопровождение включено"
+  },
+  "traffic_ahead": {
+    "fa": "ترافیک سنگین در مسیر پیش رو",
+    "en": "Heavy traffic ahead",
+    "ar": "ازدحام مروري كثيف أمامك",
+    "tr": "İleride yoğun trafik var",
+    "de": "Starker Verkehr voraus",
+    "fr": "Trafic dense à venir",
+    "es": "Tráfico denso más adelante",
+    "ru": "Впереди сильный трафик"
+  },
+  "traffic_light_ahead": {
+    "fa": "ترافیک سبک در مسیر پیش رو",
+    "en": "Light traffic ahead",
+    "ar": "ازدحام مروري خفيف أمامك",
+    "tr": "İleride hafif trafik var",
+    "de": "Leichter Verkehr voraus",
+    "fr": "Trafic léger à venir",
+    "es": "Tráfico ligero más adelante",
+    "ru": "Впереди небольшой трафик"
+  },
+  "accident_ahead": {
+    "fa": "تصادف در مسیر پیش رو",
+    "en": "Accident ahead",
+    "ar": "حادث أمامك",
+    "tr": "İleride kaza var",
+    "de": "Unfall voraus",
+    "fr": "Accident à venir",
+    "es": "Accidente más adelante",
+    "ru": "Впереди авария"
+  },
+  "road_closed_ahead": {
+    "fa": "جاده مسدود در مسیر پیش رو",
+    "en": "Road closed ahead",
+    "ar": "الطريق مغلق أمامك",
+    "tr": "İleride yol kapalı",
+    "de": "Straße gesperrt voraus",
+    "fr": "Route fermée à venir",
+    "es": "Carretera cerrada más adelante",
+    "ru": "Впереди дорога закрыта"
+  },
+  "construction_ahead": {
+    "fa": "محدودیت راه به دلیل ساخت‌وساز در مسیر پیش رو",
+    "en": "Road construction ahead",
+    "ar": "أعمال إنشائية أمامك",
+    "tr": "İleride yol çalışması var",
+    "de": "Baustelle voraus",
+    "fr": "Travaux à venir",
+    "es": "Obras en la carretera más adelante",
+    "ru": "Впереди дорожные работы"
+  },
+  "speed_camera_ahead": {
+    "fa": "دوربین کنترل سرعت در مسیر پیش رو",
+    "en": "Speed camera ahead",
+    "ar": "كاميرا مراقبة السرعة أمامك",
+    "tr": "İleride hız kamerası var",
+    "de": "Geschwindigkeitskontrolle voraus",
+    "fr": "Radar de vitesse à venir",
+    "es": "Cámara de velocidad más adelante",
+    "ru": "Впереди камера контроля скорости"
+  },
+  "red_light_camera_ahead": {
+    "fa": "دوربین چراغ قرمز در مسیر پیش رو",
+    "en": "Red light camera ahead",
+    "ar": "كاميرا الإشارة الحمراء أمامك",
+    "tr": "İleride kırmızı ışık kamerası var",
+    "de": "Rotlichtkamera voraus",
+    "fr": "Radar de feu rouge à venir",
+    "es": "Cámara de semáforo en rojo más adelante",
+    "ru": "Впереди камера на светофоре"
+  },
+  "toll_road_ahead": {
+    "fa": "جاده عوارضی در مسیر پیش رو",
+    "en": "Toll road ahead",
+    "ar": "طريق برسوم أمامك",
+    "tr": "İleride ücretli yol var",
+    "de": "Mautstraße voraus",
+    "fr": "Route à péage à venir",
+    "es": "Carretera de peaje más adelante",
+    "ru": "Впереди платная дорога"
+  },
+  "school_zone_ahead": {
+    "fa": "منطقه مدرسه در مسیر پیش رو، سرعت را کاهش دهید",
+    "en": "School zone ahead, reduce speed",
+    "ar": "منطقة مدرسة أمامك، خفف السرعة",
+    "tr": "İleride okul bölgesi var, hız azaltın",
+    "de": "Schulzone voraus, Geschwindigkeit reduzieren",
+    "fr": "Zone scolaire à venir, ralentissez",
+    "es": "Zona escolar más adelante, reduzca la velocidad",
+    "ru": "Впереди школьная зона, снизьте скорость"
+  },
+  "sharp_curve_ahead": {
+    "fa": "پیچ تند در مسیر پیش رو",
+    "en": "Sharp curve ahead",
+    "ar": "منعطف حاد أمامك",
+    "tr": "İleride keskin viraj var",
+    "de": "Scharfe Kurve voraus",
+    "fr": "Virage serré à venir",
+    "es": "Curva cerrada más adelante",
+    "ru": "Впереди крутой поворот"
+  },
+  "steep_hill_ahead": {
+    "fa": "سربالایی تند در مسیر پیش رو",
+    "en": "Steep hill ahead",
+    "ar": "منحدر شديد أمامك",
+    "tr": "İleride dik yokuş var",
+    "de": "Steile Steigung voraus",
+    "fr": "Forte pente à venir",
+    "es": "Pendiente pronunciada más adelante",
+    "ru": "Впереди крутой подъём"
+  },
+  "narrow_road_ahead": {
+    "fa": "جاده باریک در مسیر پیش رو",
+    "en": "Narrow road ahead",
+    "ar": "طريق ضيق أمامك",
+    "tr": "İleride dar yol var",
+    "de": "Enge Straße voraus",
+    "fr": "Route étroite à venir",
+    "es": "Carretera estrecha más adelante",
+    "ru": "Впереди узкая дорога"
+  },
+  "railway_crossing_ahead": {
+    "fa": "گذرگاه راه‌آهن در مسیر پیش رو",
+    "en": "Railway crossing ahead",
+    "ar": "معبر سكة حديد أمامك",
+    "tr": "İleride hemzemin geçit var",
+    "de": "Bahnübergang voraus",
+    "fr": "Passage à niveau à venir",
+    "es": "Paso a nivel más adelante",
+    "ru": "Впереди железнодорожный переезд"
+  },
+  "pedestrian_crossing_ahead": {
+    "fa": "گذرگاه عابر پیاده در مسیر پیش رو",
+    "en": "Pedestrian crossing ahead",
+    "ar": "معبر مشاة أمامك",
+    "tr": "İleride yaya geçidi var",
+    "de": "Fußgängerüberweg voraus",
+    "fr": "Passage piéton à venir",
+    "es": "Paso de peatones más adelante",
+    "ru": "Впереди пешеходный переход"
+  },
+  "animal_crossing_ahead": {
+    "fa": "عبور حیوانات در مسیر پیش رو",
+    "en": "Animal crossing ahead",
+    "ar": "معبر حيوانات أمامك",
+    "tr": "İleride hayvan geçişi var",
+    "de": "Wildwechsel voraus",
+    "fr": "Passage d'animaux à venir",
+    "es": "Cruce de animales más adelante",
+    "ru": "Впереди переход диких животных"
+  },
+  "fog_ahead": {
+    "fa": "مه غلیظ در مسیر پیش رو",
+    "en": "Dense fog ahead",
+    "ar": "ضباب كثيف أمامك",
+    "tr": "İleride yoğun sis var",
+    "de": "Dichter Nebel voraus",
+    "fr": "Brouillard dense à venir",
+    "es": "Niebla densa más adelante",
+    "ru": "Впереди густой туман"
+  },
+  "ice_road_warning": {
+    "fa": "احتمال یخ‌زدگی جاده در مسیر پیش رو",
+    "en": "Icy road possible ahead",
+    "ar": "احتمال تجمد الطريق أمامك",
+    "tr": "İleride buzlanma olasılığı var",
+    "de": "Mögliches Glatteis voraus",
+    "fr": "Route verglacée possible à venir",
+    "es": "Posible hielo en la carretera más adelante",
+    "ru": "Впереди возможен гололёд"
+  },
+  "flood_warning_ahead": {
+    "fa": "احتمال آب‌گرفتگی جاده در مسیر پیش رو",
+    "en": "Possible flooding ahead",
+    "ar": "احتمال فيضان الطريق أمامك",
+    "tr": "İleride su baskını olasılığı var",
+    "de": "Mögliche Überschwemmung voraus",
+    "fr": "Inondation possible à venir",
+    "es": "Posible inundación más adelante",
+    "ru": "Впереди возможно подтопление"
+  },
+  "speed_limit_update": {
+    "fa": "محدودیت سرعت {number} است",
+    "en": "Speed limit is {number}",
+    "ar": "الحد الأقصى للسرعة هو {number}",
+    "tr": "Hız sınırı {number}",
+    "de": "Geschwindigkeitsbegrenzung ist {number}",
+    "fr": "La limite de vitesse est {number}",
+    "es": "El límite de velocidad es {number}",
+    "ru": "Ограничение скорости {number}"
+  },
+  "reduce_speed": {
+    "fa": "سرعت خود را کاهش دهید",
+    "en": "Reduce your speed",
+    "ar": "خفف سرعتك",
+    "tr": "Hızınızı azaltın",
+    "de": "Reduzieren Sie Ihre Geschwindigkeit",
+    "fr": "Réduisez votre vitesse",
+    "es": "Reduzca su velocidad",
+    "ru": "Снизьте скорость"
+  },
+  "speeding_warning": {
+    "fa": "شما سریع‌تر از حد مجاز حرکت می‌کنید",
+    "en": "You are exceeding the speed limit",
+    "ar": "أنت تتجاوز الحد الأقصى للسرعة",
+    "tr": "Hız sınırını aşıyorsunuz",
+    "de": "Sie überschreiten die Geschwindigkeitsbegrenzung",
+    "fr": "Vous dépassez la limite de vitesse",
+    "es": "Está superando el límite de velocidad",
+    "ru": "Вы превышаете допустимую скорость"
+  },
+  "turn_left_onto_street": {
+    "fa": "به چپ بپیچید و وارد {street} شوید",
+    "en": "Turn left onto {street}",
+    "ar": "انعطف يسارًا إلى {street}",
+    "tr": "Sola dönüp {street} sokağına girin",
+    "de": "Links abbiegen auf {street}",
+    "fr": "Tournez à gauche sur {street}",
+    "es": "Gire a la izquierda en {street}",
+    "ru": "Поверните налево на {street}"
+  },
+  "turn_right_onto_street": {
+    "fa": "به راست بپیچید و وارد {street} شوید",
+    "en": "Turn right onto {street}",
+    "ar": "انعطف يمينًا إلى {street}",
+    "tr": "Sağa dönüp {street} sokağına girin",
+    "de": "Rechts abbiegen auf {street}",
+    "fr": "Tournez à droite sur {street}",
+    "es": "Gire a la derecha en {street}",
+    "ru": "Поверните направо на {street}"
+  },
+  "continue_on_street": {
+    "fa": "در {street} ادامه دهید",
+    "en": "Continue on {street}",
+    "ar": "تابع السير على {street}",
+    "tr": "{street} üzerinde devam edin",
+    "de": "Weiter auf {street}",
+    "fr": "Continuez sur {street}",
+    "es": "Continúe en {street}",
+    "ru": "Продолжайте движение по {street}"
+  },
+  "destination_is_on_street": {
+    "fa": "مقصد در {street} است",
+    "en": "Your destination is on {street}",
+    "ar": "وجهتك في {street}",
+    "tr": "Hedefiniz {street} üzerinde",
+    "de": "Ihr Ziel liegt auf {street}",
+    "fr": "Votre destination est sur {street}",
+    "es": "Su destino está en {street}",
+    "ru": "Пункт назначения на {street}"
+  },
+  "parking_available_nearby": {
+    "fa": "پارکینگ در نزدیکی مقصد موجود است",
+    "en": "Parking is available near your destination",
+    "ar": "يتوفر موقف سيارات بالقرب من وجهتك",
+    "tr": "Hedefinize yakın otopark mevcut",
+    "de": "Parkplätze in der Nähe Ihres Ziels verfügbar",
+    "fr": "Un parking est disponible près de votre destination",
+    "es": "Hay estacionamiento disponible cerca de su destino",
+    "ru": "Рядом с пунктом назначения есть парковка"
+  },
+  "stop_sign_ahead": {
+    "fa": "تابلوی ایست در مسیر پیش رو",
+    "en": "Stop sign ahead",
+    "ar": "علامة قف أمامك",
+    "tr": "İleride dur işareti var",
+    "de": "Stoppschild voraus",
+    "fr": "Panneau stop à venir",
+    "es": "Señal de stop más adelante",
+    "ru": "Впереди знак «Стоп»"
+  },
+  "yield_sign_ahead": {
+    "fa": "تابلوی حق تقدم عبور در مسیر پیش رو",
+    "en": "Yield sign ahead",
+    "ar": "علامة إفساح الطريق أمامك",
+    "tr": "İleride yol ver işareti var",
+    "de": "Vorfahrt-gewähren-Schild voraus",
+    "fr": "Panneau cédez le passage à venir",
+    "es": "Señal de ceda el paso más adelante",
+    "ru": "Впереди знак «Уступи дорогу»"
+  },
+  "traffic_light_ahead_stop": {
+    "fa": "چراغ راهنمایی در مسیر پیش رو",
+    "en": "Traffic light ahead",
+    "ar": "إشارة مرور أمامك",
+    "tr": "İleride trafik ışığı var",
+    "de": "Ampel voraus",
+    "fr": "Feu de signalisation à venir",
+    "es": "Semáforo más adelante",
+    "ru": "Впереди светофор"
+  },
+  "waypoint_reached": {
+    "fa": "به نقطه توقف رسیدید",
+    "en": "You have reached a waypoint",
+    "ar": "لقد وصلت إلى نقطة توقف",
+    "tr": "Ara noktaya ulaştınız",
+    "de": "Sie haben einen Wegpunkt erreicht",
+    "fr": "Vous avez atteint un point de passage",
+    "es": "Ha llegado a un punto de paso",
+    "ru": "Вы достигли промежуточной точки"
+  },
+  "next_waypoint": {
+    "fa": "به سمت نقطه توقف بعدی حرکت کنید",
+    "en": "Proceeding to next waypoint",
+    "ar": "المتابعة إلى نقطة التوقف التالية",
+    "tr": "Bir sonraki ara noktaya geçiliyor",
+    "de": "Weiter zum nächsten Wegpunkt",
+    "fr": "Direction le prochain point de passage",
+    "es": "Continuando al siguiente punto de paso",
+    "ru": "Движение к следующей промежуточной точке"
+  },
+  "final_destination_ahead": {
+    "fa": "مقصد نهایی در مسیر پیش رو است",
+    "en": "Final destination ahead",
+    "ar": "الوجهة النهائية أمامك",
+    "tr": "Son hedef ileride",
+    "de": "Endziel voraus",
+    "fr": "Destination finale à venir",
+    "es": "Destino final más adelante",
+    "ru": "Впереди конечный пункт назначения"
+  },
+  "roundabout_take_exit_4": {
+    "fa": "در میدان، از خروجی چهارم خارج شوید",
+    "en": "At the roundabout, take the 4th exit",
+    "ar": "عند الدوار، اسلك المخرج الرابع",
+    "tr": "Kavşakta 4. çıkışı kullanın",
+    "de": "Nehmen Sie am Kreisverkehr die 4. Ausfahrt",
+    "fr": "Au rond-point, prenez la 4ème sortie",
+    "es": "En la rotonda, tome la 4ª salida",
+    "ru": "На круговом движении съезжайте на 4-м повороте"
+  },
+  "roundabout_take_exit_5": {
+    "fa": "در میدان، از خروجی پنجم خارج شوید",
+    "en": "At the roundabout, take the 5th exit",
+    "ar": "عند الدوار، اسلك المخرج الخامس",
+    "tr": "Kavşakta 5. çıkışı kullanın",
+    "de": "Nehmen Sie am Kreisverkehr die 5. Ausfahrt",
+    "fr": "Au rond-point, prenez la 5ème sortie",
+    "es": "En la rotonda, tome la 5ª salida",
+    "ru": "На круговом движении съезжайте на 5-м повороте"
+  },
+  "roundabout_take_exit_6": {
+    "fa": "در میدان، از خروجی ششم خارج شوید",
+    "en": "At the roundabout, take the 6th exit",
+    "ar": "عند الدوار، اسلك المخرج السادس",
+    "tr": "Kavşakta 6. çıkışı kullanın",
+    "de": "Nehmen Sie am Kreisverkehr die 6. Ausfahrt",
+    "fr": "Au rond-point, prenez la 6ème sortie",
+    "es": "En la rotonda, tome la 6ª salida",
+    "ru": "На круговом движении съезжайте на 6-м повороте"
+  },
+  "roundabout_take_exit_7": {
+    "fa": "در میدان، از خروجی هفتم خارج شوید",
+    "en": "At the roundabout, take the 7th exit",
+    "ar": "عند الدوار، اسلك المخرج السابع",
+    "tr": "Kavşakta 7. çıkışı kullanın",
+    "de": "Nehmen Sie am Kreisverkehr die 7. Ausfahrt",
+    "fr": "Au rond-point, prenez la 7ème sortie",
+    "es": "En la rotonda, tome la 7ª salida",
+    "ru": "На круговом движении съезжайте на 7-м повороте"
+  },
+  "roundabout_take_exit_8": {
+    "fa": "در میدان، از خروجی هشتم خارج شوید",
+    "en": "At the roundabout, take the 8th exit",
+    "ar": "عند الدوار، اسلك المخرج الثامن",
+    "tr": "Kavşakta 8. çıkışı kullanın",
+    "de": "Nehmen Sie am Kreisverkehr die 8. Ausfahrt",
+    "fr": "Au rond-point, prenez la 8ème sortie",
+    "es": "En la rotonda, tome la 8ª salida",
+    "ru": "На круговом движении съезжайте на 8-м повороте"
+  },
+  "roundabout_take_exit_9": {
+    "fa": "در میدان، از خروجی نهم خارج شوید",
+    "en": "At the roundabout, take the 9th exit",
+    "ar": "عند الدوار، اسلك المخرج التاسع",
+    "tr": "Kavşakta 9. çıkışı kullanın",
+    "de": "Nehmen Sie am Kreisverkehr die 9. Ausfahrt",
+    "fr": "Au rond-point, prenez la 9ème sortie",
+    "es": "En la rotonda, tome la 9ª salida",
+    "ru": "На круговом движении съезжайте на 9-м повороте"
+  },
+  "roundabout_take_exit_10": {
+    "fa": "در میدان، از خروجی دهم خارج شوید",
+    "en": "At the roundabout, take the 10th exit",
+    "ar": "عند الدوار، اسلك المخرج العاشر",
+    "tr": "Kavşakta 10. çıkışı kullanın",
+    "de": "Nehmen Sie am Kreisverkehr die 10. Ausfahrt",
+    "fr": "Au rond-point, prenez la 10ème sortie",
+    "es": "En la rotonda, tome la 10ª salida",
+    "ru": "На круговом движении съезжайте на 10-м повороте"
+  },
+  "roundabout_take_exit_11": {
+    "fa": "در میدان، از خروجی یازدهم خارج شوید",
+    "en": "At the roundabout, take the 11th exit",
+    "ar": "عند الدوار، اسلك المخرج الحادي عشر",
+    "tr": "Kavşakta 11. çıkışı kullanın",
+    "de": "Nehmen Sie am Kreisverkehr die 11. Ausfahrt",
+    "fr": "Au rond-point, prenez la 11ème sortie",
+    "es": "En la rotonda, tome la 11ª salida",
+    "ru": "На круговом движении съезжайте на 11-м повороте"
+  },
+  "roundabout_take_exit_12": {
+    "fa": "در میدان، از خروجی دوازدهم خارج شوید",
+    "en": "At the roundabout, take the 12th exit",
+    "ar": "عند الدوار، اسلك المخرج الثاني عشر",
+    "tr": "Kavşakta 12. çıkışı kullanın",
+    "de": "Nehmen Sie am Kreisverkehr die 12. Ausfahrt",
+    "fr": "Au rond-point, prenez la 12ème sortie",
+    "es": "En la rotonda, tome la 12ª salida",
+    "ru": "На круговом движении съезжайте на 12-м повороте"
+  },
+  "roundabout_take_exit_13": {
+    "fa": "در میدان، از خروجی سیزدهم خارج شوید",
+    "en": "At the roundabout, take the 13th exit",
+    "ar": "عند الدوار، اسلك المخرج الثالث عشر",
+    "tr": "Kavşakta 13. çıkışı kullanın",
+    "de": "Nehmen Sie am Kreisverkehr die 13. Ausfahrt",
+    "fr": "Au rond-point, prenez la 13ème sortie",
+    "es": "En la rotonda, tome la 13ª salida",
+    "ru": "На круговом движении съезжайте на 13-м повороте"
+  },
+  "roundabout_take_exit_14": {
+    "fa": "در میدان، از خروجی چهاردهم خارج شوید",
+    "en": "At the roundabout, take the 14th exit",
+    "ar": "عند الدوار، اسلك المخرج الرابع عشر",
+    "tr": "Kavşakta 14. çıkışı kullanın",
+    "de": "Nehmen Sie am Kreisverkehr die 14. Ausfahrt",
+    "fr": "Au rond-point, prenez la 14ème sortie",
+    "es": "En la rotonda, tome la 14ª salida",
+    "ru": "На круговом движении съезжайте на 14-м повороте"
+  },
+  "roundabout_take_exit_15": {
+    "fa": "در میدان، از خروجی پانزدهم خارج شوید",
+    "en": "At the roundabout, take the 15th exit",
+    "ar": "عند الدوار، اسلك المخرج الخامس عشر",
+    "tr": "Kavşakta 15. çıkışı kullanın",
+    "de": "Nehmen Sie am Kreisverkehr die 15. Ausfahrt",
+    "fr": "Au rond-point, prenez la 15ème sortie",
+    "es": "En la rotonda, tome la 15ª salida",
+    "ru": "На круговом движении съезжайте на 15-м повороте"
+  },
+  "roundabout_take_exit_16": {
+    "fa": "در میدان، از خروجی شانزدهم خارج شوید",
+    "en": "At the roundabout, take the 16th exit",
+    "ar": "عند الدوار، اسلك المخرج السادس عشر",
+    "tr": "Kavşakta 16. çıkışı kullanın",
+    "de": "Nehmen Sie am Kreisverkehr die 16. Ausfahrt",
+    "fr": "Au rond-point, prenez la 16ème sortie",
+    "es": "En la rotonda, tome la 16ª salida",
+    "ru": "На круговом движении съезжайте на 16-м повороте"
+  },
+  "roundabout_take_exit_17": {
+    "fa": "در میدان، از خروجی هفدهم خارج شوید",
+    "en": "At the roundabout, take the 17th exit",
+    "ar": "عند الدوار، اسلك المخرج السابع عشر",
+    "tr": "Kavşakta 17. çıkışı kullanın",
+    "de": "Nehmen Sie am Kreisverkehr die 17. Ausfahrt",
+    "fr": "Au rond-point, prenez la 17ème sortie",
+    "es": "En la rotonda, tome la 17ª salida",
+    "ru": "На круговом движении съезжайте на 17-м повороте"
+  },
+  "roundabout_take_exit_18": {
+    "fa": "در میدان، از خروجی هجدهم خارج شوید",
+    "en": "At the roundabout, take the 18th exit",
+    "ar": "عند الدوار، اسلك المخرج الثامن عشر",
+    "tr": "Kavşakta 18. çıkışı kullanın",
+    "de": "Nehmen Sie am Kreisverkehr die 18. Ausfahrt",
+    "fr": "Au rond-point, prenez la 18ème sortie",
+    "es": "En la rotonda, tome la 18ª salida",
+    "ru": "На круговом движении съезжайте на 18-м повороте"
+  },
+  "roundabout_take_exit_19": {
+    "fa": "در میدان، از خروجی نوزدهم خارج شوید",
+    "en": "At the roundabout, take the 19th exit",
+    "ar": "عند الدوار، اسلك المخرج التاسع عشر",
+    "tr": "Kavşakta 19. çıkışı kullanın",
+    "de": "Nehmen Sie am Kreisverkehr die 19. Ausfahrt",
+    "fr": "Au rond-point, prenez la 19ème sortie",
+    "es": "En la rotonda, tome la 19ª salida",
+    "ru": "На круговом движении съезжайте на 19-м повороте"
+  },
+  "roundabout_take_exit_20": {
+    "fa": "در میدان، از خروجی بیستم خارج شوید",
+    "en": "At the roundabout, take the 20th exit",
+    "ar": "عند الدوار، اسلك المخرج العشرون",
+    "tr": "Kavşakta 20. çıkışı kullanın",
+    "de": "Nehmen Sie am Kreisverkehr die 20. Ausfahrt",
+    "fr": "Au rond-point, prenez la 20ème sortie",
+    "es": "En la rotonda, tome la 20ª salida",
+    "ru": "На круговом движении съезжайте на 20-м повороте"
+  },
+  "turn_left_in_20m": {
+    "fa": "20 متر دیگر به چپ بپیچید",
+    "en": "In 20 meters, turn left",
+    "ar": "بعد 20 مترًا، انعطف يسارًا",
+    "tr": "20 metre sonra sola dönün",
+    "de": "In 20 Metern links abbiegen",
+    "fr": "Dans 20 mètres, tournez à gauche",
+    "es": "En 20 metros, gire a la izquierda",
+    "ru": "Через 20 метров поверните налево"
+  },
+  "turn_right_in_20m": {
+    "fa": "20 متر دیگر به راست بپیچید",
+    "en": "In 20 meters, turn right",
+    "ar": "بعد 20 مترًا، انعطف يمينًا",
+    "tr": "20 metre sonra sağa dönün",
+    "de": "In 20 Metern rechts abbiegen",
+    "fr": "Dans 20 mètres, tournez à droite",
+    "es": "En 20 metros, gire a la derecha",
+    "ru": "Через 20 метров поверните направо"
+  },
+  "turn_left_in_30m": {
+    "fa": "30 متر دیگر به چپ بپیچید",
+    "en": "In 30 meters, turn left",
+    "ar": "بعد 30 مترًا، انعطف يسارًا",
+    "tr": "30 metre sonra sola dönün",
+    "de": "In 30 Metern links abbiegen",
+    "fr": "Dans 30 mètres, tournez à gauche",
+    "es": "En 30 metros, gire a la izquierda",
+    "ru": "Через 30 метров поверните налево"
+  },
+  "turn_right_in_30m": {
+    "fa": "30 متر دیگر به راست بپیچید",
+    "en": "In 30 meters, turn right",
+    "ar": "بعد 30 مترًا، انعطف يمينًا",
+    "tr": "30 metre sonra sağa dönün",
+    "de": "In 30 Metern rechts abbiegen",
+    "fr": "Dans 30 mètres, tournez à droite",
+    "es": "En 30 metros, gire a la derecha",
+    "ru": "Через 30 метров поверните направо"
+  },
+  "turn_left_in_50m": {
+    "fa": "50 متر دیگر به چپ بپیچید",
+    "en": "In 50 meters, turn left",
+    "ar": "بعد 50 مترًا، انعطف يسارًا",
+    "tr": "50 metre sonra sola dönün",
+    "de": "In 50 Metern links abbiegen",
+    "fr": "Dans 50 mètres, tournez à gauche",
+    "es": "En 50 metros, gire a la izquierda",
+    "ru": "Через 50 метров поверните налево"
+  },
+  "turn_right_in_50m": {
+    "fa": "50 متر دیگر به راست بپیچید",
+    "en": "In 50 meters, turn right",
+    "ar": "بعد 50 مترًا، انعطف يمينًا",
+    "tr": "50 metre sonra sağa dönün",
+    "de": "In 50 Metern rechts abbiegen",
+    "fr": "Dans 50 mètres, tournez à droite",
+    "es": "En 50 metros, gire a la derecha",
+    "ru": "Через 50 метров поверните направо"
+  },
+  "turn_left_in_100m": {
+    "fa": "100 متر دیگر به چپ بپیچید",
+    "en": "In 100 meters, turn left",
+    "ar": "بعد 100 مترًا، انعطف يسارًا",
+    "tr": "100 metre sonra sola dönün",
+    "de": "In 100 Metern links abbiegen",
+    "fr": "Dans 100 mètres, tournez à gauche",
+    "es": "En 100 metros, gire a la izquierda",
+    "ru": "Через 100 метров поверните налево"
+  },
+  "turn_right_in_100m": {
+    "fa": "100 متر دیگر به راست بپیچید",
+    "en": "In 100 meters, turn right",
+    "ar": "بعد 100 مترًا، انعطف يمينًا",
+    "tr": "100 metre sonra sağa dönün",
+    "de": "In 100 Metern rechts abbiegen",
+    "fr": "Dans 100 mètres, tournez à droite",
+    "es": "En 100 metros, gire a la derecha",
+    "ru": "Через 100 метров поверните направо"
+  },
+  "turn_left_in_150m": {
+    "fa": "150 متر دیگر به چپ بپیچید",
+    "en": "In 150 meters, turn left",
+    "ar": "بعد 150 مترًا، انعطف يسارًا",
+    "tr": "150 metre sonra sola dönün",
+    "de": "In 150 Metern links abbiegen",
+    "fr": "Dans 150 mètres, tournez à gauche",
+    "es": "En 150 metros, gire a la izquierda",
+    "ru": "Через 150 метров поверните налево"
+  },
+  "turn_right_in_150m": {
+    "fa": "150 متر دیگر به راست بپیچید",
+    "en": "In 150 meters, turn right",
+    "ar": "بعد 150 مترًا، انعطف يمينًا",
+    "tr": "150 metre sonra sağa dönün",
+    "de": "In 150 Metern rechts abbiegen",
+    "fr": "Dans 150 mètres, tournez à droite",
+    "es": "En 150 metros, gire a la derecha",
+    "ru": "Через 150 метров поверните направо"
+  },
+  "turn_left_in_200m": {
+    "fa": "200 متر دیگر به چپ بپیچید",
+    "en": "In 200 meters, turn left",
+    "ar": "بعد 200 مترًا، انعطف يسارًا",
+    "tr": "200 metre sonra sola dönün",
+    "de": "In 200 Metern links abbiegen",
+    "fr": "Dans 200 mètres, tournez à gauche",
+    "es": "En 200 metros, gire a la izquierda",
+    "ru": "Через 200 метров поверните налево"
+  },
+  "turn_right_in_200m": {
+    "fa": "200 متر دیگر به راست بپیچید",
+    "en": "In 200 meters, turn right",
+    "ar": "بعد 200 مترًا، انعطف يمينًا",
+    "tr": "200 metre sonra sağa dönün",
+    "de": "In 200 Metern rechts abbiegen",
+    "fr": "Dans 200 mètres, tournez à droite",
+    "es": "En 200 metros, gire a la derecha",
+    "ru": "Через 200 метров поверните направо"
+  },
+  "turn_left_in_300m": {
+    "fa": "300 متر دیگر به چپ بپیچید",
+    "en": "In 300 meters, turn left",
+    "ar": "بعد 300 مترًا، انعطف يسارًا",
+    "tr": "300 metre sonra sola dönün",
+    "de": "In 300 Metern links abbiegen",
+    "fr": "Dans 300 mètres, tournez à gauche",
+    "es": "En 300 metros, gire a la izquierda",
+    "ru": "Через 300 метров поверните налево"
+  },
+  "turn_right_in_300m": {
+    "fa": "300 متر دیگر به راست بپیچید",
+    "en": "In 300 meters, turn right",
+    "ar": "بعد 300 مترًا، انعطف يمينًا",
+    "tr": "300 metre sonra sağa dönün",
+    "de": "In 300 Metern rechts abbiegen",
+    "fr": "Dans 300 mètres, tournez à droite",
+    "es": "En 300 metros, gire a la derecha",
+    "ru": "Через 300 метров поверните направо"
+  },
+  "turn_left_in_400m": {
+    "fa": "400 متر دیگر به چپ بپیچید",
+    "en": "In 400 meters, turn left",
+    "ar": "بعد 400 مترًا، انعطف يسارًا",
+    "tr": "400 metre sonra sola dönün",
+    "de": "In 400 Metern links abbiegen",
+    "fr": "Dans 400 mètres, tournez à gauche",
+    "es": "En 400 metros, gire a la izquierda",
+    "ru": "Через 400 метров поверните налево"
+  },
+  "turn_right_in_400m": {
+    "fa": "400 متر دیگر به راست بپیچید",
+    "en": "In 400 meters, turn right",
+    "ar": "بعد 400 مترًا، انعطف يمينًا",
+    "tr": "400 metre sonra sağa dönün",
+    "de": "In 400 Metern rechts abbiegen",
+    "fr": "Dans 400 mètres, tournez à droite",
+    "es": "En 400 metros, gire a la derecha",
+    "ru": "Через 400 метров поверните направо"
+  },
+  "turn_left_in_500m": {
+    "fa": "500 متر دیگر به چپ بپیچید",
+    "en": "In 500 meters, turn left",
+    "ar": "بعد 500 مترًا، انعطف يسارًا",
+    "tr": "500 metre sonra sola dönün",
+    "de": "In 500 Metern links abbiegen",
+    "fr": "Dans 500 mètres, tournez à gauche",
+    "es": "En 500 metros, gire a la izquierda",
+    "ru": "Через 500 метров поверните налево"
+  },
+  "turn_right_in_500m": {
+    "fa": "500 متر دیگر به راست بپیچید",
+    "en": "In 500 meters, turn right",
+    "ar": "بعد 500 مترًا، انعطف يمينًا",
+    "tr": "500 metre sonra sağa dönün",
+    "de": "In 500 Metern rechts abbiegen",
+    "fr": "Dans 500 mètres, tournez à droite",
+    "es": "En 500 metros, gire a la derecha",
+    "ru": "Через 500 метров поверните направо"
+  },
+  "turn_left_in_600m": {
+    "fa": "600 متر دیگر به چپ بپیچید",
+    "en": "In 600 meters, turn left",
+    "ar": "بعد 600 مترًا، انعطف يسارًا",
+    "tr": "600 metre sonra sola dönün",
+    "de": "In 600 Metern links abbiegen",
+    "fr": "Dans 600 mètres, tournez à gauche",
+    "es": "En 600 metros, gire a la izquierda",
+    "ru": "Через 600 метров поверните налево"
+  },
+  "turn_right_in_600m": {
+    "fa": "600 متر دیگر به راست بپیچید",
+    "en": "In 600 meters, turn right",
+    "ar": "بعد 600 مترًا، انعطف يمينًا",
+    "tr": "600 metre sonra sağa dönün",
+    "de": "In 600 Metern rechts abbiegen",
+    "fr": "Dans 600 mètres, tournez à droite",
+    "es": "En 600 metros, gire a la derecha",
+    "ru": "Через 600 метров поверните направо"
+  },
+  "turn_left_in_700m": {
+    "fa": "700 متر دیگر به چپ بپیچید",
+    "en": "In 700 meters, turn left",
+    "ar": "بعد 700 مترًا، انعطف يسارًا",
+    "tr": "700 metre sonra sola dönün",
+    "de": "In 700 Metern links abbiegen",
+    "fr": "Dans 700 mètres, tournez à gauche",
+    "es": "En 700 metros, gire a la izquierda",
+    "ru": "Через 700 метров поверните налево"
+  },
+  "turn_right_in_700m": {
+    "fa": "700 متر دیگر به راست بپیچید",
+    "en": "In 700 meters, turn right",
+    "ar": "بعد 700 مترًا، انعطف يمينًا",
+    "tr": "700 metre sonra sağa dönün",
+    "de": "In 700 Metern rechts abbiegen",
+    "fr": "Dans 700 mètres, tournez à droite",
+    "es": "En 700 metros, gire a la derecha",
+    "ru": "Через 700 метров поверните направо"
+  },
+  "turn_left_in_800m": {
+    "fa": "800 متر دیگر به چپ بپیچید",
+    "en": "In 800 meters, turn left",
+    "ar": "بعد 800 مترًا، انعطف يسارًا",
+    "tr": "800 metre sonra sola dönün",
+    "de": "In 800 Metern links abbiegen",
+    "fr": "Dans 800 mètres, tournez à gauche",
+    "es": "En 800 metros, gire a la izquierda",
+    "ru": "Через 800 метров поверните налево"
+  },
+  "turn_right_in_800m": {
+    "fa": "800 متر دیگر به راست بپیچید",
+    "en": "In 800 meters, turn right",
+    "ar": "بعد 800 مترًا، انعطف يمينًا",
+    "tr": "800 metre sonra sağa dönün",
+    "de": "In 800 Metern rechts abbiegen",
+    "fr": "Dans 800 mètres, tournez à droite",
+    "es": "En 800 metros, gire a la derecha",
+    "ru": "Через 800 метров поверните направо"
+  },
+  "turn_left_in_900m": {
+    "fa": "900 متر دیگر به چپ بپیچید",
+    "en": "In 900 meters, turn left",
+    "ar": "بعد 900 مترًا، انعطف يسارًا",
+    "tr": "900 metre sonra sola dönün",
+    "de": "In 900 Metern links abbiegen",
+    "fr": "Dans 900 mètres, tournez à gauche",
+    "es": "En 900 metros, gire a la izquierda",
+    "ru": "Через 900 метров поверните налево"
+  },
+  "turn_right_in_900m": {
+    "fa": "900 متر دیگر به راست بپیچید",
+    "en": "In 900 meters, turn right",
+    "ar": "بعد 900 مترًا، انعطف يمينًا",
+    "tr": "900 metre sonra sağa dönün",
+    "de": "In 900 Metern rechts abbiegen",
+    "fr": "Dans 900 mètres, tournez à droite",
+    "es": "En 900 metros, gire a la derecha",
+    "ru": "Через 900 метров поверните направо"
+  },
+  "arrive_in_1km": {
+    "fa": "1 کیلومتر تا مقصد باقی مانده",
+    "en": "1 kilometers to destination",
+    "ar": "يبقى 1 كيلومترات للوصول",
+    "tr": "Hedefe 1 kilometre kaldı",
+    "de": "Noch 1 Kilometer bis zum Ziel",
+    "fr": "1 kilomètres avant la destination",
+    "es": "1 kilómetros para el destino",
+    "ru": "1 километров до пункта назначения"
+  },
+  "arrive_in_2km": {
+    "fa": "2 کیلومتر تا مقصد باقی مانده",
+    "en": "2 kilometers to destination",
+    "ar": "يبقى 2 كيلومترات للوصول",
+    "tr": "Hedefe 2 kilometre kaldı",
+    "de": "Noch 2 Kilometer bis zum Ziel",
+    "fr": "2 kilomètres avant la destination",
+    "es": "2 kilómetros para el destino",
+    "ru": "2 километров до пункта назначения"
+  },
+  "arrive_in_3km": {
+    "fa": "3 کیلومتر تا مقصد باقی مانده",
+    "en": "3 kilometers to destination",
+    "ar": "يبقى 3 كيلومترات للوصول",
+    "tr": "Hedefe 3 kilometre kaldı",
+    "de": "Noch 3 Kilometer bis zum Ziel",
+    "fr": "3 kilomètres avant la destination",
+    "es": "3 kilómetros para el destino",
+    "ru": "3 километров до пункта назначения"
+  },
+  "arrive_in_5km": {
+    "fa": "5 کیلومتر تا مقصد باقی مانده",
+    "en": "5 kilometers to destination",
+    "ar": "يبقى 5 كيلومترات للوصول",
+    "tr": "Hedefe 5 kilometre kaldı",
+    "de": "Noch 5 Kilometer bis zum Ziel",
+    "fr": "5 kilomètres avant la destination",
+    "es": "5 kilómetros para el destino",
+    "ru": "5 километров до пункта назначения"
+  },
+  "arrive_in_10km": {
+    "fa": "10 کیلومتر تا مقصد باقی مانده",
+    "en": "10 kilometers to destination",
+    "ar": "يبقى 10 كيلومترات للوصول",
+    "tr": "Hedefe 10 kilometre kaldı",
+    "de": "Noch 10 Kilometer bis zum Ziel",
+    "fr": "10 kilomètres avant la destination",
+    "es": "10 kilómetros para el destino",
+    "ru": "10 километров до пункта назначения"
+  },
+  "arrive_in_15km": {
+    "fa": "15 کیلومتر تا مقصد باقی مانده",
+    "en": "15 kilometers to destination",
+    "ar": "يبقى 15 كيلومترات للوصول",
+    "tr": "Hedefe 15 kilometre kaldı",
+    "de": "Noch 15 Kilometer bis zum Ziel",
+    "fr": "15 kilomètres avant la destination",
+    "es": "15 kilómetros para el destino",
+    "ru": "15 километров до пункта назначения"
+  },
+  "arrive_in_20km": {
+    "fa": "20 کیلومتر تا مقصد باقی مانده",
+    "en": "20 kilometers to destination",
+    "ar": "يبقى 20 كيلومترات للوصول",
+    "tr": "Hedefe 20 kilometre kaldı",
+    "de": "Noch 20 Kilometer bis zum Ziel",
+    "fr": "20 kilomètres avant la destination",
+    "es": "20 kilómetros para el destino",
+    "ru": "20 километров до пункта назначения"
+  },
+  "turn_left_in_100ft": {
+    "fa": "100 فوت دیگر به چپ بپیچید",
+    "en": "In 100 feet, turn left",
+    "ar": "بعد 100 قدمًا، انعطف يسارًا",
+    "tr": "100 fit sonra sola dönün",
+    "de": "In 100 Fuß links abbiegen",
+    "fr": "Dans 100 pieds, tournez à gauche",
+    "es": "En 100 pies, gire a la izquierda",
+    "ru": "Через 100 футов поверните налево"
+  },
+  "turn_right_in_100ft": {
+    "fa": "100 فوت دیگر به راست بپیچید",
+    "en": "In 100 feet, turn right",
+    "ar": "بعد 100 قدمًا، انعطف يمينًا",
+    "tr": "100 fit sonra sağa dönün",
+    "de": "In 100 Fuß rechts abbiegen",
+    "fr": "Dans 100 pieds, tournez à droite",
+    "es": "En 100 pies, gire a la derecha",
+    "ru": "Через 100 футов поверните направо"
+  },
+  "turn_left_in_200ft": {
+    "fa": "200 فوت دیگر به چپ بپیچید",
+    "en": "In 200 feet, turn left",
+    "ar": "بعد 200 قدمًا، انعطف يسارًا",
+    "tr": "200 fit sonra sola dönün",
+    "de": "In 200 Fuß links abbiegen",
+    "fr": "Dans 200 pieds, tournez à gauche",
+    "es": "En 200 pies, gire a la izquierda",
+    "ru": "Через 200 футов поверните налево"
+  },
+  "turn_right_in_200ft": {
+    "fa": "200 فوت دیگر به راست بپیچید",
+    "en": "In 200 feet, turn right",
+    "ar": "بعد 200 قدمًا، انعطف يمينًا",
+    "tr": "200 fit sonra sağa dönün",
+    "de": "In 200 Fuß rechts abbiegen",
+    "fr": "Dans 200 pieds, tournez à droite",
+    "es": "En 200 pies, gire a la derecha",
+    "ru": "Через 200 футов поверните направо"
+  },
+  "turn_left_in_300ft": {
+    "fa": "300 فوت دیگر به چپ بپیچید",
+    "en": "In 300 feet, turn left",
+    "ar": "بعد 300 قدمًا، انعطف يسارًا",
+    "tr": "300 fit sonra sola dönün",
+    "de": "In 300 Fuß links abbiegen",
+    "fr": "Dans 300 pieds, tournez à gauche",
+    "es": "En 300 pies, gire a la izquierda",
+    "ru": "Через 300 футов поверните налево"
+  },
+  "turn_right_in_300ft": {
+    "fa": "300 فوت دیگر به راست بپیچید",
+    "en": "In 300 feet, turn right",
+    "ar": "بعد 300 قدمًا، انعطف يمينًا",
+    "tr": "300 fit sonra sağa dönün",
+    "de": "In 300 Fuß rechts abbiegen",
+    "fr": "Dans 300 pieds, tournez à droite",
+    "es": "En 300 pies, gire a la derecha",
+    "ru": "Через 300 футов поверните направо"
+  },
+  "turn_left_in_500ft": {
+    "fa": "500 فوت دیگر به چپ بپیچید",
+    "en": "In 500 feet, turn left",
+    "ar": "بعد 500 قدمًا، انعطف يسارًا",
+    "tr": "500 fit sonra sola dönün",
+    "de": "In 500 Fuß links abbiegen",
+    "fr": "Dans 500 pieds, tournez à gauche",
+    "es": "En 500 pies, gire a la izquierda",
+    "ru": "Через 500 футов поверните налево"
+  },
+  "turn_right_in_500ft": {
+    "fa": "500 فوت دیگر به راست بپیچید",
+    "en": "In 500 feet, turn right",
+    "ar": "بعد 500 قدمًا، انعطف يمينًا",
+    "tr": "500 fit sonra sağa dönün",
+    "de": "In 500 Fuß rechts abbiegen",
+    "fr": "Dans 500 pieds, tournez à droite",
+    "es": "En 500 pies, gire a la derecha",
+    "ru": "Через 500 футов поверните направо"
+  },
+  "turn_left_in_800ft": {
+    "fa": "800 فوت دیگر به چپ بپیچید",
+    "en": "In 800 feet, turn left",
+    "ar": "بعد 800 قدمًا، انعطف يسارًا",
+    "tr": "800 fit sonra sola dönün",
+    "de": "In 800 Fuß links abbiegen",
+    "fr": "Dans 800 pieds, tournez à gauche",
+    "es": "En 800 pies, gire a la izquierda",
+    "ru": "Через 800 футов поверните налево"
+  },
+  "turn_right_in_800ft": {
+    "fa": "800 فوت دیگر به راست بپیچید",
+    "en": "In 800 feet, turn right",
+    "ar": "بعد 800 قدمًا، انعطف يمينًا",
+    "tr": "800 fit sonra sağa dönün",
+    "de": "In 800 Fuß rechts abbiegen",
+    "fr": "Dans 800 pieds, tournez à droite",
+    "es": "En 800 pies, gire a la derecha",
+    "ru": "Через 800 футов поверните направо"
+  },
+  "turn_left_in_1000ft": {
+    "fa": "1000 فوت دیگر به چپ بپیچید",
+    "en": "In 1000 feet, turn left",
+    "ar": "بعد 1000 قدمًا، انعطف يسارًا",
+    "tr": "1000 fit sonra sola dönün",
+    "de": "In 1000 Fuß links abbiegen",
+    "fr": "Dans 1000 pieds, tournez à gauche",
+    "es": "En 1000 pies, gire a la izquierda",
+    "ru": "Через 1000 футов поверните налево"
+  },
+  "turn_right_in_1000ft": {
+    "fa": "1000 فوت دیگر به راست بپیچید",
+    "en": "In 1000 feet, turn right",
+    "ar": "بعد 1000 قدمًا، انعطف يمينًا",
+    "tr": "1000 fit sonra sağa dönün",
+    "de": "In 1000 Fuß rechts abbiegen",
+    "fr": "Dans 1000 pieds, tournez à droite",
+    "es": "En 1000 pies, gire a la derecha",
+    "ru": "Через 1000 футов поверните направо"
+  },
+  "turn_left_in_1500ft": {
+    "fa": "1500 فوت دیگر به چپ بپیچید",
+    "en": "In 1500 feet, turn left",
+    "ar": "بعد 1500 قدمًا، انعطف يسارًا",
+    "tr": "1500 fit sonra sola dönün",
+    "de": "In 1500 Fuß links abbiegen",
+    "fr": "Dans 1500 pieds, tournez à gauche",
+    "es": "En 1500 pies, gire a la izquierda",
+    "ru": "Через 1500 футов поверните налево"
+  },
+  "turn_right_in_1500ft": {
+    "fa": "1500 فوت دیگر به راست بپیچید",
+    "en": "In 1500 feet, turn right",
+    "ar": "بعد 1500 قدمًا، انعطف يمينًا",
+    "tr": "1500 fit sonra sağa dönün",
+    "de": "In 1500 Fuß rechts abbiegen",
+    "fr": "Dans 1500 pieds, tournez à droite",
+    "es": "En 1500 pies, gire a la derecha",
+    "ru": "Через 1500 футов поверните направо"
+  },
+  "arrive_in_1mi": {
+    "fa": "1 مایل تا مقصد باقی مانده",
+    "en": "1 miles to destination",
+    "ar": "يبقى 1 أميال للوصول",
+    "tr": "Hedefe 1 mil kaldı",
+    "de": "Noch 1 Meilen bis zum Ziel",
+    "fr": "1 miles avant la destination",
+    "es": "1 millas para el destino",
+    "ru": "1 миль до пункта назначения"
+  },
+  "arrive_in_2mi": {
+    "fa": "2 مایل تا مقصد باقی مانده",
+    "en": "2 miles to destination",
+    "ar": "يبقى 2 أميال للوصول",
+    "tr": "Hedefe 2 mil kaldı",
+    "de": "Noch 2 Meilen bis zum Ziel",
+    "fr": "2 miles avant la destination",
+    "es": "2 millas para el destino",
+    "ru": "2 миль до пункта назначения"
+  },
+  "arrive_in_3mi": {
+    "fa": "3 مایل تا مقصد باقی مانده",
+    "en": "3 miles to destination",
+    "ar": "يبقى 3 أميال للوصول",
+    "tr": "Hedefe 3 mil kaldı",
+    "de": "Noch 3 Meilen bis zum Ziel",
+    "fr": "3 miles avant la destination",
+    "es": "3 millas para el destino",
+    "ru": "3 миль до пункта назначения"
+  },
+  "arrive_in_5mi": {
+    "fa": "5 مایل تا مقصد باقی مانده",
+    "en": "5 miles to destination",
+    "ar": "يبقى 5 أميال للوصول",
+    "tr": "Hedefe 5 mil kaldı",
+    "de": "Noch 5 Meilen bis zum Ziel",
+    "fr": "5 miles avant la destination",
+    "es": "5 millas para el destino",
+    "ru": "5 миль до пункта назначения"
+  },
+  "arrive_in_10mi": {
+    "fa": "10 مایل تا مقصد باقی مانده",
+    "en": "10 miles to destination",
+    "ar": "يبقى 10 أميال للوصول",
+    "tr": "Hedefe 10 mil kaldı",
+    "de": "Noch 10 Meilen bis zum Ziel",
+    "fr": "10 miles avant la destination",
+    "es": "10 millas para el destino",
+    "ru": "10 миль до пункта назначения"
+  },
+  "arrive_in_15mi": {
+    "fa": "15 مایل تا مقصد باقی مانده",
+    "en": "15 miles to destination",
+    "ar": "يبقى 15 أميال للوصول",
+    "tr": "Hedefe 15 mil kaldı",
+    "de": "Noch 15 Meilen bis zum Ziel",
+    "fr": "15 miles avant la destination",
+    "es": "15 millas para el destino",
+    "ru": "15 миль до пункта назначения"
+  },
+  "arrive_in_20mi": {
+    "fa": "20 مایل تا مقصد باقی مانده",
+    "en": "20 miles to destination",
+    "ar": "يبقى 20 أميال للوصول",
+    "tr": "Hedefe 20 mil kaldı",
+    "de": "Noch 20 Meilen bis zum Ziel",
+    "fr": "20 miles avant la destination",
+    "es": "20 millas para el destino",
+    "ru": "20 миль до пункта назначения"
+  },
+  "speed_limit_30kmh": {
+    "fa": "محدودیت سرعت 30 کیلومتر بر ساعت است",
+    "en": "Speed limit is 30 kilometers per hour",
+    "ar": "الحد الأقصى للسرعة هو 30 كيلومتر في الساعة",
+    "tr": "Hız sınırı saatte 30 kilometre",
+    "de": "Geschwindigkeitsbegrenzung ist 30 Kilometer pro Stunde",
+    "fr": "La limite de vitesse est 30 kilomètres par heure",
+    "es": "El límite de velocidad es 30 kilómetros por hora",
+    "ru": "Ограничение скорости 30 километров в час"
+  },
+  "speed_limit_40kmh": {
+    "fa": "محدودیت سرعت 40 کیلومتر بر ساعت است",
+    "en": "Speed limit is 40 kilometers per hour",
+    "ar": "الحد الأقصى للسرعة هو 40 كيلومتر في الساعة",
+    "tr": "Hız sınırı saatte 40 kilometre",
+    "de": "Geschwindigkeitsbegrenzung ist 40 Kilometer pro Stunde",
+    "fr": "La limite de vitesse est 40 kilomètres par heure",
+    "es": "El límite de velocidad es 40 kilómetros por hora",
+    "ru": "Ограничение скорости 40 километров в час"
+  },
+  "speed_limit_50kmh": {
+    "fa": "محدودیت سرعت 50 کیلومتر بر ساعت است",
+    "en": "Speed limit is 50 kilometers per hour",
+    "ar": "الحد الأقصى للسرعة هو 50 كيلومتر في الساعة",
+    "tr": "Hız sınırı saatte 50 kilometre",
+    "de": "Geschwindigkeitsbegrenzung ist 50 Kilometer pro Stunde",
+    "fr": "La limite de vitesse est 50 kilomètres par heure",
+    "es": "El límite de velocidad es 50 kilómetros por hora",
+    "ru": "Ограничение скорости 50 километров в час"
+  },
+  "speed_limit_60kmh": {
+    "fa": "محدودیت سرعت 60 کیلومتر بر ساعت است",
+    "en": "Speed limit is 60 kilometers per hour",
+    "ar": "الحد الأقصى للسرعة هو 60 كيلومتر في الساعة",
+    "tr": "Hız sınırı saatte 60 kilometre",
+    "de": "Geschwindigkeitsbegrenzung ist 60 Kilometer pro Stunde",
+    "fr": "La limite de vitesse est 60 kilomètres par heure",
+    "es": "El límite de velocidad es 60 kilómetros por hora",
+    "ru": "Ограничение скорости 60 километров в час"
+  },
+  "speed_limit_70kmh": {
+    "fa": "محدودیت سرعت 70 کیلومتر بر ساعت است",
+    "en": "Speed limit is 70 kilometers per hour",
+    "ar": "الحد الأقصى للسرعة هو 70 كيلومتر في الساعة",
+    "tr": "Hız sınırı saatte 70 kilometre",
+    "de": "Geschwindigkeitsbegrenzung ist 70 Kilometer pro Stunde",
+    "fr": "La limite de vitesse est 70 kilomètres par heure",
+    "es": "El límite de velocidad es 70 kilómetros por hora",
+    "ru": "Ограничение скорости 70 километров в час"
+  },
+  "speed_limit_80kmh": {
+    "fa": "محدودیت سرعت 80 کیلومتر بر ساعت است",
+    "en": "Speed limit is 80 kilometers per hour",
+    "ar": "الحد الأقصى للسرعة هو 80 كيلومتر في الساعة",
+    "tr": "Hız sınırı saatte 80 kilometre",
+    "de": "Geschwindigkeitsbegrenzung ist 80 Kilometer pro Stunde",
+    "fr": "La limite de vitesse est 80 kilomètres par heure",
+    "es": "El límite de velocidad es 80 kilómetros por hora",
+    "ru": "Ограничение скорости 80 километров в час"
+  },
+  "speed_limit_90kmh": {
+    "fa": "محدودیت سرعت 90 کیلومتر بر ساعت است",
+    "en": "Speed limit is 90 kilometers per hour",
+    "ar": "الحد الأقصى للسرعة هو 90 كيلومتر في الساعة",
+    "tr": "Hız sınırı saatte 90 kilometre",
+    "de": "Geschwindigkeitsbegrenzung ist 90 Kilometer pro Stunde",
+    "fr": "La limite de vitesse est 90 kilomètres par heure",
+    "es": "El límite de velocidad es 90 kilómetros por hora",
+    "ru": "Ограничение скорости 90 километров в час"
+  },
+  "speed_limit_100kmh": {
+    "fa": "محدودیت سرعت 100 کیلومتر بر ساعت است",
+    "en": "Speed limit is 100 kilometers per hour",
+    "ar": "الحد الأقصى للسرعة هو 100 كيلومتر في الساعة",
+    "tr": "Hız sınırı saatte 100 kilometre",
+    "de": "Geschwindigkeitsbegrenzung ist 100 Kilometer pro Stunde",
+    "fr": "La limite de vitesse est 100 kilomètres par heure",
+    "es": "El límite de velocidad es 100 kilómetros por hora",
+    "ru": "Ограничение скорости 100 километров в час"
+  },
+  "speed_limit_110kmh": {
+    "fa": "محدودیت سرعت 110 کیلومتر بر ساعت است",
+    "en": "Speed limit is 110 kilometers per hour",
+    "ar": "الحد الأقصى للسرعة هو 110 كيلومتر في الساعة",
+    "tr": "Hız sınırı saatte 110 kilometre",
+    "de": "Geschwindigkeitsbegrenzung ist 110 Kilometer pro Stunde",
+    "fr": "La limite de vitesse est 110 kilomètres par heure",
+    "es": "El límite de velocidad es 110 kilómetros por hora",
+    "ru": "Ограничение скорости 110 километров в час"
+  },
+  "speed_limit_120kmh": {
+    "fa": "محدودیت سرعت 120 کیلومتر بر ساعت است",
+    "en": "Speed limit is 120 kilometers per hour",
+    "ar": "الحد الأقصى للسرعة هو 120 كيلومتر في الساعة",
+    "tr": "Hız sınırı saatte 120 kilometre",
+    "de": "Geschwindigkeitsbegrenzung ist 120 Kilometer pro Stunde",
+    "fr": "La limite de vitesse est 120 kilomètres par heure",
+    "es": "El límite de velocidad es 120 kilómetros por hora",
+    "ru": "Ограничение скорости 120 километров в час"
+  },
+  "speed_limit_130kmh": {
+    "fa": "محدودیت سرعت 130 کیلومتر بر ساعت است",
+    "en": "Speed limit is 130 kilometers per hour",
+    "ar": "الحد الأقصى للسرعة هو 130 كيلومتر في الساعة",
+    "tr": "Hız sınırı saatte 130 kilometre",
+    "de": "Geschwindigkeitsbegrenzung ist 130 Kilometer pro Stunde",
+    "fr": "La limite de vitesse est 130 kilomètres par heure",
+    "es": "El límite de velocidad es 130 kilómetros por hora",
+    "ru": "Ограничение скорости 130 километров в час"
+  },
+  "speed_limit_20mph": {
+    "fa": "محدودیت سرعت 20 مایل بر ساعت است",
+    "en": "Speed limit is 20 miles per hour",
+    "ar": "الحد الأقصى للسرعة هو 20 ميل في الساعة",
+    "tr": "Hız sınırı saatte 20 mil",
+    "de": "Geschwindigkeitsbegrenzung ist 20 Meilen pro Stunde",
+    "fr": "La limite de vitesse est 20 miles par heure",
+    "es": "El límite de velocidad es 20 millas por hora",
+    "ru": "Ограничение скорости 20 миль в час"
+  },
+  "speed_limit_25mph": {
+    "fa": "محدودیت سرعت 25 مایل بر ساعت است",
+    "en": "Speed limit is 25 miles per hour",
+    "ar": "الحد الأقصى للسرعة هو 25 ميل في الساعة",
+    "tr": "Hız sınırı saatte 25 mil",
+    "de": "Geschwindigkeitsbegrenzung ist 25 Meilen pro Stunde",
+    "fr": "La limite de vitesse est 25 miles par heure",
+    "es": "El límite de velocidad es 25 millas por hora",
+    "ru": "Ограничение скорости 25 миль в час"
+  },
+  "speed_limit_30mph": {
+    "fa": "محدودیت سرعت 30 مایل بر ساعت است",
+    "en": "Speed limit is 30 miles per hour",
+    "ar": "الحد الأقصى للسرعة هو 30 ميل في الساعة",
+    "tr": "Hız sınırı saatte 30 mil",
+    "de": "Geschwindigkeitsbegrenzung ist 30 Meilen pro Stunde",
+    "fr": "La limite de vitesse est 30 miles par heure",
+    "es": "El límite de velocidad es 30 millas por hora",
+    "ru": "Ограничение скорости 30 миль в час"
+  },
+  "speed_limit_35mph": {
+    "fa": "محدودیت سرعت 35 مایل بر ساعت است",
+    "en": "Speed limit is 35 miles per hour",
+    "ar": "الحد الأقصى للسرعة هو 35 ميل في الساعة",
+    "tr": "Hız sınırı saatte 35 mil",
+    "de": "Geschwindigkeitsbegrenzung ist 35 Meilen pro Stunde",
+    "fr": "La limite de vitesse est 35 miles par heure",
+    "es": "El límite de velocidad es 35 millas por hora",
+    "ru": "Ограничение скорости 35 миль в час"
+  },
+  "speed_limit_40mph": {
+    "fa": "محدودیت سرعت 40 مایل بر ساعت است",
+    "en": "Speed limit is 40 miles per hour",
+    "ar": "الحد الأقصى للسرعة هو 40 ميل في الساعة",
+    "tr": "Hız sınırı saatte 40 mil",
+    "de": "Geschwindigkeitsbegrenzung ist 40 Meilen pro Stunde",
+    "fr": "La limite de vitesse est 40 miles par heure",
+    "es": "El límite de velocidad es 40 millas por hora",
+    "ru": "Ограничение скорости 40 миль в час"
+  },
+  "speed_limit_45mph": {
+    "fa": "محدودیت سرعت 45 مایل بر ساعت است",
+    "en": "Speed limit is 45 miles per hour",
+    "ar": "الحد الأقصى للسرعة هو 45 ميل في الساعة",
+    "tr": "Hız sınırı saatte 45 mil",
+    "de": "Geschwindigkeitsbegrenzung ist 45 Meilen pro Stunde",
+    "fr": "La limite de vitesse est 45 miles par heure",
+    "es": "El límite de velocidad es 45 millas por hora",
+    "ru": "Ограничение скорости 45 миль в час"
+  },
+  "speed_limit_50mph": {
+    "fa": "محدودیت سرعت 50 مایل بر ساعت است",
+    "en": "Speed limit is 50 miles per hour",
+    "ar": "الحد الأقصى للسرعة هو 50 ميل في الساعة",
+    "tr": "Hız sınırı saatte 50 mil",
+    "de": "Geschwindigkeitsbegrenzung ist 50 Meilen pro Stunde",
+    "fr": "La limite de vitesse est 50 miles par heure",
+    "es": "El límite de velocidad es 50 millas por hora",
+    "ru": "Ограничение скорости 50 миль в час"
+  },
+  "speed_limit_55mph": {
+    "fa": "محدودیت سرعت 55 مایل بر ساعت است",
+    "en": "Speed limit is 55 miles per hour",
+    "ar": "الحد الأقصى للسرعة هو 55 ميل في الساعة",
+    "tr": "Hız sınırı saatte 55 mil",
+    "de": "Geschwindigkeitsbegrenzung ist 55 Meilen pro Stunde",
+    "fr": "La limite de vitesse est 55 miles par heure",
+    "es": "El límite de velocidad es 55 millas por hora",
+    "ru": "Ограничение скорости 55 миль в час"
+  },
+  "speed_limit_60mph": {
+    "fa": "محدودیت سرعت 60 مایل بر ساعت است",
+    "en": "Speed limit is 60 miles per hour",
+    "ar": "الحد الأقصى للسرعة هو 60 ميل في الساعة",
+    "tr": "Hız sınırı saatte 60 mil",
+    "de": "Geschwindigkeitsbegrenzung ist 60 Meilen pro Stunde",
+    "fr": "La limite de vitesse est 60 miles par heure",
+    "es": "El límite de velocidad es 60 millas por hora",
+    "ru": "Ограничение скорости 60 миль в час"
+  },
+  "speed_limit_65mph": {
+    "fa": "محدودیت سرعت 65 مایل بر ساعت است",
+    "en": "Speed limit is 65 miles per hour",
+    "ar": "الحد الأقصى للسرعة هو 65 ميل في الساعة",
+    "tr": "Hız sınırı saatte 65 mil",
+    "de": "Geschwindigkeitsbegrenzung ist 65 Meilen pro Stunde",
+    "fr": "La limite de vitesse est 65 miles par heure",
+    "es": "El límite de velocidad es 65 millas por hora",
+    "ru": "Ограничение скорости 65 миль в час"
+  },
+  "speed_limit_70mph": {
+    "fa": "محدودیت سرعت 70 مایل بر ساعت است",
+    "en": "Speed limit is 70 miles per hour",
+    "ar": "الحد الأقصى للسرعة هو 70 ميل في الساعة",
+    "tr": "Hız sınırı saatte 70 mil",
+    "de": "Geschwindigkeitsbegrenzung ist 70 Meilen pro Stunde",
+    "fr": "La limite de vitesse est 70 miles par heure",
+    "es": "El límite de velocidad es 70 millas por hora",
+    "ru": "Ограничение скорости 70 миль в час"
+  },
+  "take_exit_1": {
+    "fa": "از خروجی 1 خارج شوید",
+    "en": "Take exit 1",
+    "ar": "اسلك المخرج 1",
+    "tr": "1 numaralı çıkışı kullanın",
+    "de": "Nehmen Sie Ausfahrt 1",
+    "fr": "Prenez la sortie 1",
+    "es": "Tome la salida 1",
+    "ru": "Съезжайте на выезде 1"
+  },
+  "take_exit_2": {
+    "fa": "از خروجی 2 خارج شوید",
+    "en": "Take exit 2",
+    "ar": "اسلك المخرج 2",
+    "tr": "2 numaralı çıkışı kullanın",
+    "de": "Nehmen Sie Ausfahrt 2",
+    "fr": "Prenez la sortie 2",
+    "es": "Tome la salida 2",
+    "ru": "Съезжайте на выезде 2"
+  },
+  "take_exit_3": {
+    "fa": "از خروجی 3 خارج شوید",
+    "en": "Take exit 3",
+    "ar": "اسلك المخرج 3",
+    "tr": "3 numaralı çıkışı kullanın",
+    "de": "Nehmen Sie Ausfahrt 3",
+    "fr": "Prenez la sortie 3",
+    "es": "Tome la salida 3",
+    "ru": "Съезжайте на выезде 3"
+  },
+  "take_exit_4": {
+    "fa": "از خروجی 4 خارج شوید",
+    "en": "Take exit 4",
+    "ar": "اسلك المخرج 4",
+    "tr": "4 numaralı çıkışı kullanın",
+    "de": "Nehmen Sie Ausfahrt 4",
+    "fr": "Prenez la sortie 4",
+    "es": "Tome la salida 4",
+    "ru": "Съезжайте на выезде 4"
+  },
+  "take_exit_5": {
+    "fa": "از خروجی 5 خارج شوید",
+    "en": "Take exit 5",
+    "ar": "اسلك المخرج 5",
+    "tr": "5 numaralı çıkışı kullanın",
+    "de": "Nehmen Sie Ausfahrt 5",
+    "fr": "Prenez la sortie 5",
+    "es": "Tome la salida 5",
+    "ru": "Съезжайте на выезде 5"
+  },
+  "take_exit_6": {
+    "fa": "از خروجی 6 خارج شوید",
+    "en": "Take exit 6",
+    "ar": "اسلك المخرج 6",
+    "tr": "6 numaralı çıkışı kullanın",
+    "de": "Nehmen Sie Ausfahrt 6",
+    "fr": "Prenez la sortie 6",
+    "es": "Tome la salida 6",
+    "ru": "Съезжайте на выезде 6"
+  },
+  "take_exit_7": {
+    "fa": "از خروجی 7 خارج شوید",
+    "en": "Take exit 7",
+    "ar": "اسلك المخرج 7",
+    "tr": "7 numaralı çıkışı kullanın",
+    "de": "Nehmen Sie Ausfahrt 7",
+    "fr": "Prenez la sortie 7",
+    "es": "Tome la salida 7",
+    "ru": "Съезжайте на выезде 7"
+  },
+  "take_exit_8": {
+    "fa": "از خروجی 8 خارج شوید",
+    "en": "Take exit 8",
+    "ar": "اسلك المخرج 8",
+    "tr": "8 numaralı çıkışı kullanın",
+    "de": "Nehmen Sie Ausfahrt 8",
+    "fr": "Prenez la sortie 8",
+    "es": "Tome la salida 8",
+    "ru": "Съезжайте на выезде 8"
+  },
+  "take_exit_9": {
+    "fa": "از خروجی 9 خارج شوید",
+    "en": "Take exit 9",
+    "ar": "اسلك المخرج 9",
+    "tr": "9 numaralı çıkışı kullanın",
+    "de": "Nehmen Sie Ausfahrt 9",
+    "fr": "Prenez la sortie 9",
+    "es": "Tome la salida 9",
+    "ru": "Съезжайте на выезде 9"
+  },
+  "take_exit_10": {
+    "fa": "از خروجی 10 خارج شوید",
+    "en": "Take exit 10",
+    "ar": "اسلك المخرج 10",
+    "tr": "10 numaralı çıkışı kullanın",
+    "de": "Nehmen Sie Ausfahrt 10",
+    "fr": "Prenez la sortie 10",
+    "es": "Tome la salida 10",
+    "ru": "Съезжайте на выезде 10"
+  },
+  "take_exit_11": {
+    "fa": "از خروجی 11 خارج شوید",
+    "en": "Take exit 11",
+    "ar": "اسلك المخرج 11",
+    "tr": "11 numaralı çıkışı kullanın",
+    "de": "Nehmen Sie Ausfahrt 11",
+    "fr": "Prenez la sortie 11",
+    "es": "Tome la salida 11",
+    "ru": "Съезжайте на выезде 11"
+  },
+  "take_exit_12": {
+    "fa": "از خروجی 12 خارج شوید",
+    "en": "Take exit 12",
+    "ar": "اسلك المخرج 12",
+    "tr": "12 numaralı çıkışı kullanın",
+    "de": "Nehmen Sie Ausfahrt 12",
+    "fr": "Prenez la sortie 12",
+    "es": "Tome la salida 12",
+    "ru": "Съезжайте на выезде 12"
+  },
+  "take_exit_13": {
+    "fa": "از خروجی 13 خارج شوید",
+    "en": "Take exit 13",
+    "ar": "اسلك المخرج 13",
+    "tr": "13 numaralı çıkışı kullanın",
+    "de": "Nehmen Sie Ausfahrt 13",
+    "fr": "Prenez la sortie 13",
+    "es": "Tome la salida 13",
+    "ru": "Съезжайте на выезде 13"
+  },
+  "take_exit_14": {
+    "fa": "از خروجی 14 خارج شوید",
+    "en": "Take exit 14",
+    "ar": "اسلك المخرج 14",
+    "tr": "14 numaralı çıkışı kullanın",
+    "de": "Nehmen Sie Ausfahrt 14",
+    "fr": "Prenez la sortie 14",
+    "es": "Tome la salida 14",
+    "ru": "Съезжайте на выезде 14"
+  },
+  "take_exit_15": {
+    "fa": "از خروجی 15 خارج شوید",
+    "en": "Take exit 15",
+    "ar": "اسلك المخرج 15",
+    "tr": "15 numaralı çıkışı kullanın",
+    "de": "Nehmen Sie Ausfahrt 15",
+    "fr": "Prenez la sortie 15",
+    "es": "Tome la salida 15",
+    "ru": "Съезжайте на выезде 15"
+  }
+}
