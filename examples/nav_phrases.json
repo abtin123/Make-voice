@@ -1,0 +1,252 @@
+{
+  "turn_left": {
+    "fa": "به چپ بپیچید",
+    "en": "Turn left",
+    "ar": "انعطف يسارًا",
+    "tr": "Sola dönün",
+    "de": "Links abbiegen",
+    "fr": "Tournez à gauche",
+    "es": "Gire a la izquierda",
+    "ru": "Поверните налево"
+  },
+  "turn_right": {
+    "fa": "به راست بپیچید",
+    "en": "Turn right",
+    "ar": "انعطف يمينًا",
+    "tr": "Sağa dönün",
+    "de": "Rechts abbiegen",
+    "fr": "Tournez à droite",
+    "es": "Gire a la derecha",
+    "ru": "Поверните направо"
+  },
+  "turn_left_in_50m": {
+    "fa": "۵۰ متر دیگر به چپ بپیچید",
+    "en": "In 50 meters, turn left",
+    "ar": "بعد 50 مترًا، انعطف يسارًا",
+    "tr": "50 metre sonra sola dönün",
+    "de": "In 50 Metern links abbiegen",
+    "fr": "Dans 50 mètres, tournez à gauche",
+    "es": "En 50 metros, gire a la izquierda",
+    "ru": "Через 50 метров поверните налево"
+  },
+  "turn_right_in_50m": {
+    "fa": "۵۰ متر دیگر به راست بپیچید",
+    "en": "In 50 meters, turn right",
+    "ar": "بعد 50 مترًا، انعطف يمينًا",
+    "tr": "50 metre sonra sağa dönün",
+    "de": "In 50 Metern rechts abbiegen",
+    "fr": "Dans 50 mètres, tournez à droite",
+    "es": "En 50 metros, gire a la derecha",
+    "ru": "Через 50 метров поверните направо"
+  },
+  "turn_left_in_200m": {
+    "fa": "۲۰۰ متر دیگر به چپ بپیچید",
+    "en": "In 200 meters, turn left",
+    "ar": "بعد 200 متر، انعطف يسارًا",
+    "tr": "200 metre sonra sola dönün",
+    "de": "In 200 Metern links abbiegen",
+    "fr": "Dans 200 mètres, tournez à gauche",
+    "es": "En 200 metros, gire a la izquierda",
+    "ru": "Через 200 метров поверните налево"
+  },
+  "turn_right_in_200m": {
+    "fa": "۲۰۰ متر دیگر به راست بپیچید",
+    "en": "In 200 meters, turn right",
+    "ar": "بعد 200 متر، انعطف يمينًا",
+    "tr": "200 metre sonra sağa dönün",
+    "de": "In 200 Metern rechts abbiegen",
+    "fr": "Dans 200 mètres, tournez à droite",
+    "es": "En 200 metros, gire a la derecha",
+    "ru": "Через 200 метров поверните направо"
+  },
+  "continue_straight": {
+    "fa": "مستقیم ادامه دهید",
+    "en": "Continue straight",
+    "ar": "تابع السير مستقيمًا",
+    "tr": "Düz devam edin",
+    "de": "Geradeaus weiterfahren",
+    "fr": "Continuez tout droit",
+    "es": "Continúe recto",
+    "ru": "Продолжайте движение прямо"
+  },
+  "keep_left": {
+    "fa": "در مسیر چپ بمانید",
+    "en": "Keep left",
+    "ar": "حافظ على اليسار",
+    "tr": "Soldan devam edin",
+    "de": "Links halten",
+    "fr": "Restez à gauche",
+    "es": "Manténgase a la izquierda",
+    "ru": "Держитесь левее"
+  },
+  "keep_right": {
+    "fa": "در مسیر راست بمانید",
+    "en": "Keep right",
+    "ar": "حافظ على اليمين",
+    "tr": "Sağdan devam edin",
+    "de": "Rechts halten",
+    "fr": "Restez à droite",
+    "es": "Manténgase a la derecha",
+    "ru": "Держитесь правее"
+  },
+  "u_turn": {
+    "fa": "دور بزنید",
+    "en": "Make a U-turn",
+    "ar": "قم بالدوران للخلف",
+    "tr": "U dönüşü yapın",
+    "de": "Wenden Sie",
+    "fr": "Faites demi-tour",
+    "es": "Haga un cambio de sentido",
+    "ru": "Развернитесь"
+  },
+  "roundabout_take_exit": {
+    "fa": "در میدان، از خروجی بعدی خارج شوید",
+    "en": "At the roundabout, take the next exit",
+    "ar": "عند الدوار، اسلك المخرج التالي",
+    "tr": "Kavşakta bir sonraki çıkışı kullanın",
+    "de": "Nehmen Sie am Kreisverkehr die nächste Ausfahrt",
+    "fr": "Au rond-point, prenez la prochaine sortie",
+    "es": "En la rotonda, tome la siguiente salida",
+    "ru": "На круговом движении съезжайте на следующем повороте"
+  },
+  "merge_onto_highway": {
+    "fa": "وارد بزرگراه شوید",
+    "en": "Merge onto the highway",
+    "ar": "ادخل إلى الطريق السريع",
+    "tr": "Otoyola girin",
+    "de": "Auf die Autobahn auffahren",
+    "fr": "Rejoignez l'autoroute",
+    "es": "Incorpórese a la autopista",
+    "ru": "Выезжайте на автомагистраль"
+  },
+  "exit_highway": {
+    "fa": "از بزرگراه خارج شوید",
+    "en": "Exit the highway",
+    "ar": "اخرج من الطريق السريع",
+    "tr": "Otoyoldan çıkın",
+    "de": "Autobahn verlassen",
+    "fr": "Quittez l'autoroute",
+    "es": "Salga de la autopista",
+    "ru": "Съезжайте с автомагистрали"
+  },
+  "arrived_destination": {
+    "fa": "به مقصد رسیدید",
+    "en": "You have arrived at your destination",
+    "ar": "لقد وصلت إلى وجهتك",
+    "tr": "Hedefinize ulaştınız",
+    "de": "Sie haben Ihr Ziel erreicht",
+    "fr": "Vous êtes arrivé à destination",
+    "es": "Ha llegado a su destino",
+    "ru": "Вы прибыли в пункт назначения"
+  },
+  "approaching_destination": {
+    "fa": "به مقصد نزدیک شدید",
+    "en": "You are approaching your destination",
+    "ar": "أنت تقترب من وجهتك",
+    "tr": "Hedefinize yaklaşıyorsunuz",
+    "de": "Sie nähern sich Ihrem Ziel",
+    "fr": "Vous approchez de votre destination",
+    "es": "Se está acercando a su destino",
+    "ru": "Вы приближаетесь к пункту назначения"
+  },
+  "destination_on_left": {
+    "fa": "مقصد در سمت چپ است",
+    "en": "Your destination is on the left",
+    "ar": "وجهتك على اليسار",
+    "tr": "Hedefiniz solda",
+    "de": "Ihr Ziel liegt links",
+    "fr": "Votre destination est à gauche",
+    "es": "Su destino está a la izquierda",
+    "ru": "Пункт назначения слева"
+  },
+  "destination_on_right": {
+    "fa": "مقصد در سمت راست است",
+    "en": "Your destination is on the right",
+    "ar": "وجهتك على اليمين",
+    "tr": "Hedefiniz sağda",
+    "de": "Ihr Ziel liegt rechts",
+    "fr": "Votre destination est à droite",
+    "es": "Su destino está a la derecha",
+    "ru": "Пункт назначения справа"
+  },
+  "recalculating_route": {
+    "fa": "مسیر در حال محاسبه مجدد است",
+    "en": "Recalculating route",
+    "ar": "جارٍ إعادة حساب المسار",
+    "tr": "Rota yeniden hesaplanıyor",
+    "de": "Route wird neu berechnet",
+    "fr": "Recalcul de l'itinéraire",
+    "es": "Recalculando la ruta",
+    "ru": "Пересчёт маршрута"
+  },
+  "off_route": {
+    "fa": "شما از مسیر خارج شدید",
+    "en": "You are off route",
+    "ar": "لقد خرجت عن المسار",
+    "tr": "Rotadan çıktınız",
+    "de": "Sie haben die Route verlassen",
+    "fr": "Vous êtes hors itinéraire",
+    "es": "Se ha desviado de la ruta",
+    "ru": "Вы отклонились от маршрута"
+  },
+  "traffic_ahead": {
+    "fa": "ترافیک سنگین در مسیر پیش رو",
+    "en": "Heavy traffic ahead",
+    "ar": "ازدحام مروري كثيف أمامك",
+    "tr": "İleride yoğun trafik var",
+    "de": "Starker Verkehr voraus",
+    "fr": "Trafic dense à venir",
+    "es": "Tráfico denso más adelante",
+    "ru": "Впереди сильный трафик"
+  },
+  "speed_camera_ahead": {
+    "fa": "دوربین کنترل سرعت در مسیر پیش رو",
+    "en": "Speed camera ahead",
+    "ar": "كاميرا مراقبة السرعة أمامك",
+    "tr": "İleride hız kamerası var",
+    "de": "Geschwindigkeitskontrolle voraus",
+    "fr": "Radar de vitesse à venir",
+    "es": "Cámara de velocidad más adelante",
+    "ru": "Впереди камера контроля скорости"
+  },
+  "toll_road_ahead": {
+    "fa": "جاده عوارضی در مسیر پیش رو",
+    "en": "Toll road ahead",
+    "ar": "طريق برسوم أمامك",
+    "tr": "İleride ücretli yol var",
+    "de": "Mautstraße voraus",
+    "fr": "Route à péage à venir",
+    "es": "Carretera de peaje más adelante",
+    "ru": "Впереди платная дорога"
+  },
+  "start_navigation": {
+    "fa": "مسیریابی آغاز شد",
+    "en": "Navigation started",
+    "ar": "بدأ التنقل",
+    "tr": "Navigasyon başladı",
+    "de": "Navigation gestartet",
+    "fr": "Navigation démarrée",
+    "es": "Navegación iniciada",
+    "ru": "Навигация начата"
+  },
+  "gps_signal_lost": {
+    "fa": "سیگنال جی‌پی‌اس قطع شد",
+    "en": "GPS signal lost",
+    "ar": "فُقدت إشارة تحديد المواقع",
+    "tr": "GPS sinyali kayboldu",
+    "de": "GPS-Signal verloren",
+    "fr": "Signal GPS perdu",
+    "es": "Señal de GPS perdida",
+    "ru": "Сигнал GPS потерян"
+  },
+  "arrive_in_1km": {
+    "fa": "یک کیلومتر تا مقصد باقی مانده",
+    "en": "1 kilometer to destination",
+    "ar": "يبقى كيلومتر واحد للوصول",
+    "tr": "Hedefe 1 kilometre kaldı",
+    "de": "Noch 1 Kilometer bis zum Ziel",
+    "fr": "1 kilomètre avant la destination",
+    "es": "1 kilómetro para el destino",
+    "ru": "1 километр до пункта назначения"
+  }
+}
