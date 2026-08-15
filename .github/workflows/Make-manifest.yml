@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       release_tag:
-        description: 'Release tag that contains the voice-pack assets (empty = latest release)'
+        description: 'Release tag that will receive the voice-pack assets and manifest (empty = latest release)'
         required: false
         type: string
       voice_repo:
@@ -12,11 +12,17 @@ on:
         required: false
         default: 'abtin123/Make-voice'
         type: string
+      source_run_id:
+        description: 'GitHub Actions run ID to copy voice artifacts from (example: 31789526142)'
+        required: false
+        default: '31789526142'
+        type: string
   release:
     types: [published, edited]
 
 permissions:
   contents: write
+  actions: read
 
 jobs:
   manifest:
@@ -56,6 +62,42 @@ jobs:
           echo "release_id=$release_id" >> "$GITHUB_OUTPUT"
           echo "html_url=$html_url" >> "$GITHUB_OUTPUT"
 
+      - name: Download voice artifacts from workflow run
+        if: ${{ inputs.source_run_id != '' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VOICE_REPO: ${{ steps.release.outputs.repo }}
+          SOURCE_RUN_ID: ${{ inputs.source_run_id }}
+        run: |
+          set -euo pipefail
+          mkdir -p dist/run-artifacts dist/release-assets
+          gh run download "$SOURCE_RUN_ID" \
+            --repo "$VOICE_REPO" \
+            --dir dist/run-artifacts
+
+          find dist/run-artifacts -type f \
+            \( -iname '*.zip' -o -iname '*.mp3' -o -iname '*.ogg' -o -iname '*.m4a' -o -iname '*.json' \) \
+            ! -iname 'manifest.json' \
+            -exec cp {} dist/release-assets/ \;
+
+          asset_count="$(find dist/release-assets -maxdepth 1 -type f | wc -l | tr -d ' ')"
+          if [ "$asset_count" -eq 0 ]; then
+            echo "No voice assets were found in workflow run $SOURCE_RUN_ID." >&2
+            exit 1
+          fi
+
+      - name: Upload run artifacts to release
+        if: ${{ inputs.source_run_id != '' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VOICE_REPO: ${{ steps.release.outputs.repo }}
+          RELEASE_TAG: ${{ steps.release.outputs.tag }}
+        run: |
+          set -euo pipefail
+          gh release upload "$RELEASE_TAG" dist/release-assets/* \
+            --repo "$VOICE_REPO" \
+            --clobber
+
       - name: Build manifest from release assets
         env:
           GH_TOKEN: ${{ github.token }}
@@ -63,6 +105,7 @@ jobs:
           RELEASE_TAG: ${{ steps.release.outputs.tag }}
           RELEASE_ID: ${{ steps.release.outputs.release_id }}
           RELEASE_URL: ${{ steps.release.outputs.html_url }}
+          SOURCE_RUN_ID: ${{ inputs.source_run_id }}
         run: |
           set -euo pipefail
           mkdir -p dist
@@ -72,6 +115,7 @@ jobs:
             --arg repo "$VOICE_REPO" \
             --arg tag "$RELEASE_TAG" \
             --arg release_url "$RELEASE_URL" \
+            --arg source_run_id "$SOURCE_RUN_ID" \
             --slurpfile assets dist/assets.json '
             def voice_name($name):
               if ($name | test("mahnaz|female|fa[-_]?female|persian[-_]?female"; "i")) then "مهناز"
@@ -89,6 +133,7 @@ jobs:
               repo: $repo,
               release_tag: $tag,
               release_url: $release_url,
+              source_run_id: (if $source_run_id == "" then null else $source_run_id end),
               defaults: {
                 enabled_category: "alerts",
                 voice_id: "alerts-fa"
@@ -97,6 +142,7 @@ jobs:
                 $assets[0][]
                 | select(.state == "uploaded")
                 | select(.name | test("\\.(zip|mp3|ogg|m4a|json)$"; "i"))
+                | select(.name != "manifest.json")
                 | {
                     id: (.name | ascii_downcase | gsub("\\.(zip|mp3|ogg|m4a|json)$"; "") | gsub("[^a-z0-9]+"; "-") | gsub("(^-|-$)"; "")),
                     name: voice_name(.name),
