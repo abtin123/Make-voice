@@ -1,0 +1,133 @@
+name: Build Voice Manifest
+
+on:
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: 'Release tag that contains the voice-pack assets (empty = latest release)'
+        required: false
+        type: string
+      voice_repo:
+        description: 'GitHub repository that hosts the voice releases'
+        required: false
+        default: 'abtin123/Make-voice'
+        type: string
+  release:
+    types: [published, edited]
+
+permissions:
+  contents: write
+
+jobs:
+  manifest:
+    name: Generate manifest.json for downloadable voices
+    runs-on: ubuntu-latest
+    env:
+      DEFAULT_VOICE_REPO: abtin123/Make-voice
+    steps:
+      - name: Resolve target release
+        id: release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          INPUT_RELEASE_TAG: ${{ inputs.release_tag }}
+          INPUT_VOICE_REPO: ${{ inputs.voice_repo }}
+        run: |
+          set -euo pipefail
+          repo="${INPUT_VOICE_REPO:-$DEFAULT_VOICE_REPO}"
+          tag="${INPUT_RELEASE_TAG:-}"
+
+          if [ -z "$tag" ] && [ "${{ github.event_name }}" = "release" ]; then
+            repo="${{ github.repository }}"
+            tag="${{ github.event.release.tag_name }}"
+          fi
+
+          if [ -n "$tag" ]; then
+            release_json="$(gh api "repos/$repo/releases/tags/$tag")"
+          else
+            release_json="$(gh api "repos/$repo/releases/latest")"
+            tag="$(jq -r '.tag_name' <<<"$release_json")"
+          fi
+
+          release_id="$(jq -r '.id' <<<"$release_json")"
+          html_url="$(jq -r '.html_url' <<<"$release_json")"
+
+          echo "repo=$repo" >> "$GITHUB_OUTPUT"
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+          echo "release_id=$release_id" >> "$GITHUB_OUTPUT"
+          echo "html_url=$html_url" >> "$GITHUB_OUTPUT"
+
+      - name: Build manifest from release assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VOICE_REPO: ${{ steps.release.outputs.repo }}
+          RELEASE_TAG: ${{ steps.release.outputs.tag }}
+          RELEASE_ID: ${{ steps.release.outputs.release_id }}
+          RELEASE_URL: ${{ steps.release.outputs.html_url }}
+        run: |
+          set -euo pipefail
+          mkdir -p dist
+          gh api "repos/$VOICE_REPO/releases/$RELEASE_ID/assets" > dist/assets.json
+
+          jq -n \
+            --arg repo "$VOICE_REPO" \
+            --arg tag "$RELEASE_TAG" \
+            --arg release_url "$RELEASE_URL" \
+            --slurpfile assets dist/assets.json '
+            def voice_name($name):
+              if ($name | test("mahnaz|female|fa[-_]?female|persian[-_]?female"; "i")) then "مهناز"
+              elif ($name | test("male|fa[-_]?male|persian[-_]?male"; "i")) then "پارسا"
+              elif ($name | test("alert|warning|hazard"; "i")) then "هشدارها"
+              else ($name | split(".")[0] | gsub("[-_]"; " "))
+              end;
+            def voice_kind($name):
+              if ($name | test("alert|warning|hazard"; "i")) then "alerts"
+              else "navigation"
+              end;
+            {
+              schema_version: 1,
+              generated_at: (now | todateiso8601),
+              repo: $repo,
+              release_tag: $tag,
+              release_url: $release_url,
+              defaults: {
+                enabled_category: "alerts",
+                voice_id: "alerts-fa"
+              },
+              voices: [
+                $assets[0][]
+                | select(.state == "uploaded")
+                | select(.name | test("\\.(zip|mp3|ogg|m4a|json)$"; "i"))
+                | {
+                    id: (.name | ascii_downcase | gsub("\\.(zip|mp3|ogg|m4a|json)$"; "") | gsub("[^a-z0-9]+"; "-") | gsub("(^-|-$)"; "")),
+                    name: voice_name(.name),
+                    category: voice_kind(.name),
+                    language: "fa-IR",
+                    file_name: .name,
+                    size: .size,
+                    content_type: .content_type,
+                    download_url: .browser_download_url,
+                    created_at: .created_at,
+                    updated_at: .updated_at
+                  }
+              ]
+            }' > dist/manifest.json
+
+          jq -e '.voices | length > 0' dist/manifest.json
+          jq . dist/manifest.json
+
+      - name: Upload manifest to release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VOICE_REPO: ${{ steps.release.outputs.repo }}
+          RELEASE_TAG: ${{ steps.release.outputs.tag }}
+        run: |
+          set -euo pipefail
+          gh release upload "$RELEASE_TAG" dist/manifest.json \
+            --repo "$VOICE_REPO" \
+            --clobber
+
+      - name: Upload workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: voice-manifest
+          path: dist/manifest.json
