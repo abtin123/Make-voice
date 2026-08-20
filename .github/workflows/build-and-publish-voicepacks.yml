@@ -29,6 +29,11 @@ jobs:
           python-version: "3.11"
       - name: Install dependencies
         run: pip install -r requirements.txt
+      - name: Restore completed Avasho cue cache
+        uses: actions/cache@v4
+        with:
+          path: out/.voice_build_cache
+          key: avasho-cues-v3-${{ inputs.speakers }}-${{ inputs.speed }}-${{ hashFiles('examples/nav_phrases.json', 'scripts/*.py') }}
       - name: Build one-file voice packs with Avasho
         env:
           AVASHO_GATEWAY_TOKEN: ${{ secrets.AVASHO_GATEWAY_TOKEN }}
@@ -44,6 +49,7 @@ jobs:
               --out "out/$speaker" \
               --speaker "$speaker" \
               --speed "$SPEED" \
+              --cache-dir "out/.voice_build_cache/$speaker" \
               --download-base "https://github.com/${{ github.repository }}/releases/download/${{ inputs.release_tag }}"
           done
           python scripts/merge_single_manifest.py --inputs out/*/manifest.json --out out/manifest.json
