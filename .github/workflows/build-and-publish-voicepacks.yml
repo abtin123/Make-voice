@@ -4,11 +4,11 @@ on:
   workflow_dispatch:
     inputs:
       speakers:
-        description: "گوینده‌های Avasho با فاصله جدا شوند؛ نمونه: shahrzad sara"
+        description: "گوینده‌های TTS Neural با فاصله جدا شوند؛ نمونه: shahrzad sara"
         required: true
         default: "shahrzad"
       speed:
-        description: "سرعت Avasho"
+        description: "سرعت TTS Neural"
         required: false
         default: "1.0"
       release_tag:
@@ -29,19 +29,17 @@ jobs:
           python-version: "3.11"
       - name: Install dependencies
         run: pip install -r requirements.txt
-      - name: Restore completed Avasho cue cache
+      - name: Restore completed Neural TTS cue cache
         uses: actions/cache@v4
         with:
           path: out/.voice_build_cache
-          key: avasho-cues-v3-${{ inputs.speakers }}-${{ inputs.speed }}-${{ hashFiles('examples/nav_phrases.json', 'scripts/*.py') }}
-      - name: Build one-file voice packs with Avasho
+          key: neural-cues-v1-${{ inputs.speakers }}-${{ inputs.speed }}-${{ hashFiles('examples/nav_phrases.json', 'scripts/*.py') }}
+      - name: Build one-file voice packs with Neural TTS
         env:
-          AVASHO_GATEWAY_TOKEN: ${{ secrets.AVASHO_GATEWAY_TOKEN }}
           SPEAKERS: ${{ inputs.speakers }}
           SPEED: ${{ inputs.speed }}
         run: |
           set -euo pipefail
-          test -n "$AVASHO_GATEWAY_TOKEN"
           mkdir -p out
           for speaker in $SPEAKERS; do
             python scripts/build_single_voicepack.py \
@@ -56,7 +54,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ inputs.release_tag }}
-          name: Avasho Single Voice Packs
+          name: Neural Single Voice Packs
           files: |
             out/manifest.json
             out/*.abv
