@@ -1,18 +1,28 @@
 # آبتین‌مپ — سازندهٔ صوت یک‌تکه
 
-هر گویندهٔ فارسی یک فایل `.nvb` دانلودی تولید می‌کند. این فایل شامل یک MP3
+هر گویندهٔ فارسی یک فایل `.abv` دانلودی تولید می‌کند. این فایل شامل یک MP3
 یک‌تکه و نقشهٔ زمانی فرمان‌ها است؛ اپ فقط با حرکت به ابتدای cue و توقف در
 انتهای آن فرمان دلخواه را پخش می‌کند. فایل جمله‌ای جداگانه، چسباندن فایل در
 اپ و اعلام فاصله وجود ندارد.
 
+هر اجرای سازنده، گویندهٔ ساخته‌شده را به `manifest.json` اضافه یا همان ورودی
+را به‌روزرسانی می‌کند؛ ساخت گویندهٔ بعدی، گوینده‌های قبلی را حذف نمی‌کند.
+فیلد `display_name` نام قابل‌نمایش گوینده است و اپ همین نام را به‌جای نام فنی
+فایل در فهرست دانلود و انتخاب صوت نشان می‌دهد.
+
 ## پیش‌نیاز
 
-در Secrets مخزن GitHub، مقدار `AVASHO_GATEWAY_TOKEN` را با gateway-token سرویس
-Avasho قرار دهید. این کلید هرگز در سورس یا فایل خروجی ذخیره نمی‌شود.
+در Secrets مخزن GitHub، سه مقدار `AVASHO_GATEWAY_TOKEN`، `AVASHO_CSRF_TOKEN` و
+`AVASHO_SESSION_COOKIE` را از همان نشست معتبر Avasho قرار دهید. درخواست‌های
+`POST /request` بدون CSRF و کوکی نشست اجرا نمی‌شوند تا خطای ردشدن سمت سرویس
+پیش از ساخت فایل صوتی به‌صورت روشن گزارش شود. هیچ‌یک از این مقادیر در سورس یا
+فایل خروجی ذخیره نمی‌شود.
 
 ```bash
 pip install -r requirements.txt
 export AVASHO_GATEWAY_TOKEN='...'
+export AVASHO_CSRF_TOKEN='...'
+export AVASHO_SESSION_COOKIE='name=value; other=value'
 ```
 
 ## ساخت محلی
@@ -36,18 +46,18 @@ sara pune bahar shahrzad sheyda shirin
 
 از Actions، workflow `build-and-publish-single-voicepacks` را اجرا کنید. ورودی
 `speakers` می‌تواند یک یا چند گوینده باشد؛ مثلاً `shahrzad sara`. خروجی release
-دارای `manifest.json` و یک `.nvb` مستقل برای هر گوینده است، مانند:
+دارای `manifest.json` و یک `.abv` مستقل برای هر گوینده است، مانند:
 
 ```text
-fa_shahrzad.nvb
-fa_sara.nvb
+fa_shahrzad.abv
+fa_sara.abv
 manifest.json
 ```
 
-## فرمت NVB
+## فرمت ABV
 
 ```text
-magic 4B "NVB1" | json_len u32 | audio_len u32 | gzip(json) | gzip(mp3)
+magic 4B "ABV1" | json_len u32 | audio_len u32 | gzip(json) | gzip(mp3)
 ```
 
 فرادادهٔ نسخهٔ ۲ شامل `cues` است. هر cue دارای `start`، `end` و `text` است و

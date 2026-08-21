@@ -16,7 +16,7 @@
       the full run, then only sys.exit(1) if the remaining failure
       rate exceeds --max-failure-rate (default 2%). Below that, it
       logs the failures to stderr but exits 0 so catalog.json + the
-      successful .nvb files still get zipped/published; the missing
+      successful .abv files still get zipped/published; the missing
       phrase/lang/gender entries are just absent from catalog.json.
 - [ ] Not tested against real edge-tts endpoint (network disabled
       here) — verify by re-running the workflow.
