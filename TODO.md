@@ -20,3 +20,5 @@
       phrase/lang/gender entries are just absent from catalog.json.
 - [ ] Not tested against real edge-tts endpoint (network disabled
       here) — verify by re-running the workflow.
+
+- [ ] Bootstrap temporary Avasho session and CSRF automatically from the gateway endpoint so only AVASHO_GATEWAY_TOKEN remains a required repository secret.

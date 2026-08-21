@@ -12,17 +12,14 @@
 
 ## پیش‌نیاز
 
-در Secrets مخزن GitHub، سه مقدار `AVASHO_GATEWAY_TOKEN`، `AVASHO_CSRF_TOKEN` و
-`AVASHO_SESSION_COOKIE` را از همان نشست معتبر Avasho قرار دهید. درخواست‌های
-`POST /request` بدون CSRF و کوکی نشست اجرا نمی‌شوند تا خطای ردشدن سمت سرویس
-پیش از ساخت فایل صوتی به‌صورت روشن گزارش شود. هیچ‌یک از این مقادیر در سورس یا
-فایل خروجی ذخیره نمی‌شود.
+در Secrets مخزن GitHub فقط مقدار `AVASHO_GATEWAY_TOKEN` را قرار دهید. سازنده
+پیش از درخواست `POST /request` یک نشست موقت ایجاد می‌کند و CSRF متناظر را از
+header، پاسخ یا cookie درگاه می‌خواند. این نشست و توکن فقط در حافظهٔ همان اجرا
+هستند و در سورس یا فایل خروجی ذخیره نمی‌شوند.
 
 ```bash
 pip install -r requirements.txt
 export AVASHO_GATEWAY_TOKEN='...'
-export AVASHO_CSRF_TOKEN='...'
-export AVASHO_SESSION_COOKIE='name=value; other=value'
 ```
 
 ## ساخت محلی
