@@ -37,15 +37,11 @@ jobs:
       - name: Build one-file voice packs with Avasho
         env:
           AVASHO_GATEWAY_TOKEN: ${{ secrets.AVASHO_GATEWAY_TOKEN }}
-          AVASHO_CSRF_TOKEN: ${{ secrets.AVASHO_CSRF_TOKEN }}
-          AVASHO_SESSION_COOKIE: ${{ secrets.AVASHO_SESSION_COOKIE }}
           SPEAKERS: ${{ inputs.speakers }}
           SPEED: ${{ inputs.speed }}
         run: |
           set -euo pipefail
           test -n "$AVASHO_GATEWAY_TOKEN"
-          test -n "$AVASHO_CSRF_TOKEN"
-          test -n "$AVASHO_SESSION_COOKIE"
           mkdir -p out
           for speaker in $SPEAKERS; do
             python scripts/build_single_voicepack.py \
