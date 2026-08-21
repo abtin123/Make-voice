@@ -22,5 +22,6 @@
       here) — verify by re-running the workflow.
 
 - [x] Bootstrap temporary Avasho session and CSRF automatically from the gateway endpoint so only AVASHO_GATEWAY_TOKEN remains a required repository secret.
-- [ ] Analyze the new Avasho bootstrap failure and correct the actual session or CSRF handshake required by the service.
-- [ ] Diagnose and fix the latest Avasho voice-builder failure from the uploaded workflow log.
+- [x] Analyze the new Avasho bootstrap failure and correct the actual session or CSRF handshake required by the service.
+- [x] Diagnose and fix the latest Avasho voice-builder failure from the uploaded workflow log.
+- [x] Diagnose and fix the newly uploaded Avasho voice-builder workflow failure.
