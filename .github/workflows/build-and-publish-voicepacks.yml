@@ -37,23 +37,25 @@ jobs:
       - name: Build one-file voice packs with Avasho
         env:
           AVASHO_GATEWAY_TOKEN: ${{ secrets.AVASHO_GATEWAY_TOKEN }}
+          AVASHO_CSRF_TOKEN: ${{ secrets.AVASHO_CSRF_TOKEN }}
+          AVASHO_SESSION_COOKIE: ${{ secrets.AVASHO_SESSION_COOKIE }}
           SPEAKERS: ${{ inputs.speakers }}
           SPEED: ${{ inputs.speed }}
         run: |
           set -euo pipefail
           test -n "$AVASHO_GATEWAY_TOKEN"
+          test -n "$AVASHO_CSRF_TOKEN"
+          test -n "$AVASHO_SESSION_COOKIE"
           mkdir -p out
           for speaker in $SPEAKERS; do
             python scripts/build_single_voicepack.py \
               --input examples/nav_phrases.json \
-              --out "out/$speaker" \
+              --out "out" \
               --speaker "$speaker" \
               --speed "$SPEED" \
               --cache-dir "out/.voice_build_cache/$speaker" \
               --download-base "https://github.com/${{ github.repository }}/releases/download/${{ inputs.release_tag }}"
           done
-          python scripts/merge_single_manifest.py --inputs out/*/manifest.json --out out/manifest.json
-          find out -mindepth 2 -name '*.nvb' -exec cp {} out/ \;
       - name: Publish release assets
         uses: softprops/action-gh-release@v2
         with:
@@ -61,7 +63,7 @@ jobs:
           name: Avasho Single Voice Packs
           files: |
             out/manifest.json
-            out/*.nvb
+            out/*.abv
           fail_on_unmatched_files: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
