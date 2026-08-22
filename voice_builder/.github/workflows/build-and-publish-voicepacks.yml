@@ -1,0 +1,57 @@
+name: build-and-publish-neural-voicepacks
+
+on:
+  workflow_dispatch:
+    inputs:
+      speed:
+        description: "سرعت همهٔ صداهای Neural"
+        required: false
+        default: "1.0"
+      release_tag:
+        description: "تگ انتشار"
+        required: false
+        default: "voicepacks-latest"
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-publish-all-languages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Restore Neural cue cache
+        uses: actions/cache@v4
+        with:
+          path: out/.voice_build_cache
+          key: neural-all-languages-v2-${{ inputs.speed }}-${{ hashFiles('examples/nav_phrases.json', 'scripts/*.py') }}
+      - name: Build all female and male one-file ABV packs
+        env:
+          SPEED: ${{ inputs.speed }}
+        run: |
+          set -euo pipefail
+          mkdir -p out
+          python scripts/build_single_voicepack.py \
+            --input examples/nav_phrases.json \
+            --out out \
+            --languages all \
+            --genders all \
+            --speed "$SPEED" \
+            --cache-dir out/.voice_build_cache \
+            --download-base "https://github.com/${{ github.repository }}/releases/download/${{ inputs.release_tag }}"
+      - name: Publish all voice pack assets
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ inputs.release_tag }}
+          name: Neural Voice Packs — All Languages
+          files: |
+            out/manifest.json
+            out/*.abv
+          fail_on_unmatched_files: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
