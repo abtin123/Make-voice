@@ -1,0 +1,251 @@
+name: Fix Voice Manifest From Run
+
+on:
+  workflow_dispatch:
+    inputs:
+      source_run_id:
+        description: 'Run ID of build-and-publish-voicepacks to recover assets from (optional, informational only)'
+        required: false
+        default: ''
+        type: string
+      release_tag:
+        description: 'Release tag to target (leave empty to auto-pick the release with the newest voice assets, including drafts)'
+        required: false
+        default: 'voicepacks-latest'
+        type: string
+      voice_repo:
+        description: 'GitHub repository that owns the source run and release'
+        required: false
+        default: 'abtin123/Make-voice'
+        type: string
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  manifest:
+    name: Recover voice-pack assets and rebuild manifests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: List every release (including drafts)
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VOICE_REPO: ${{ inputs.voice_repo }}
+        run: |
+          set -euo pipefail
+          mkdir -p dist
+
+          # ROOT CAUSE of the earlier failure: GET /repos/{owner}/{repo}/releases/tags/{tag}
+          # never returns draft releases. GET /repos/{owner}/{repo}/releases (the list
+          # endpoint) DOES include drafts for an authenticated request with repo access,
+          # so that is what we always use as the source of truth from here on.
+          gh api --paginate "repos/$VOICE_REPO/releases" --jq '.[]' | jq -s '.' > dist/releases.json
+
+          echo "All releases in $VOICE_REPO (draft and published):"
+          jq -r '.[] | "\(.tag_name)\t draft=\(.draft)\t assets=\(.assets | length)"' dist/releases.json
+
+      - name: Resolve release(s) to scan
+        id: release
+        env:
+          RELEASE_TAG: ${{ inputs.release_tag }}
+        run: |
+          set -euo pipefail
+
+          if [ -n "${RELEASE_TAG:-}" ]; then
+            tag="$RELEASE_TAG"
+            match="$(jq -c --arg tag "$tag" '[.[] | select(.tag_name == $tag)]' dist/releases.json)"
+            if [ "$(jq 'length' <<<"$match")" -eq 0 ]; then
+              echo "::error::Release tag '$tag' was not found among $(jq 'length' dist/releases.json) releases (checked drafts too). Check the tag spelling."
+              exit 1
+            fi
+            echo "$match" > dist/scan_releases.json
+          else
+            echo "No release_tag given: scanning ALL releases (including drafts) for voice assets."
+            cp dist/releases.json dist/scan_releases.json
+          fi
+
+          echo "Releases to scan: $(jq 'length' dist/scan_releases.json)"
+
+      - name: Read existing release assets only (all matching releases)
+        run: |
+          set -euo pipefail
+
+          # IMPORTANT: do not download/re-upload any voice files.
+          # Asset metadata is already embedded in dist/scan_releases.json,
+          # no extra per-release API call needed.
+          jq '[
+            .[] as $r
+            | $r.assets[]
+            | . + {
+                release_tag: $r.tag_name,
+                release_id: $r.id,
+                release_html_url: $r.html_url,
+                release_draft: $r.draft,
+                release_upload_url: $r.upload_url
+              }
+          ]' dist/scan_releases.json > dist/assets_flat.json
+
+          echo "All assets across scanned releases:"
+          jq -r '.[].name' dist/assets_flat.json | sort -u
+
+          # Only accept the strict per-language/gender voice filename pattern.
+          jq '[.[] | select(.state == "uploaded") | select(.name | test("^[a-z]{2}_(male|female)\\.abv$"; "i"))]' \
+            dist/assets_flat.json > dist/assets.json
+
+          voice_count="$(jq 'length' dist/assets.json)"
+          if [ "$voice_count" -eq 0 ]; then
+            echo "::error::No voice .abv assets found in any scanned release (checked drafts too)."
+            exit 1
+          fi
+
+          echo "Found $voice_count existing voice assets."
+
+      - name: Build voice-only manifest with language and voice names
+        env:
+          VOICE_REPO: ${{ inputs.voice_repo }}
+          SOURCE_RUN_ID: ${{ inputs.source_run_id }}
+        run: |
+          set -euo pipefail
+
+          jq -n \
+            --arg repo "$VOICE_REPO" \
+            --arg source_run_id "$SOURCE_RUN_ID" \
+            --slurpfile assets dist/assets.json '
+            def voice_info($name):
+              ($name | capture("^(?<lang>[a-z]{2})_(?<gender>male|female)\\.abv$"; "i")) as $v |
+              ($v.lang | ascii_downcase) as $lc |
+              ($v.gender | ascii_downcase) as $g |
+              {
+                code: $lc,
+                language: ({
+                  ar:"العربية",
+                  de:"Deutsch",
+                  en:"English",
+                  es:"Español",
+                  fa:"فارسی",
+                  fr:"Français",
+                  ru:"Русский",
+                  tr:"Türkçe"
+                }[$lc] // $v.lang),
+                gender: $g,
+                gender_fa: ({male:"مرد", female:"زن"}[$g] // $g),
+                voice_name: ({
+                  "ar_female":"ليان",
+                  "ar_male":"عمر",
+                  "de_female":"Anna",
+                  "de_male":"Felix",
+                  "en_female":"Emma",
+                  "en_male":"James",
+                  "es_female":"Sofía",
+                  "es_male":"Carlos",
+                  "fa_female":"بهاره",
+                  "fa_male":"آرش",
+                  "fr_female":"Claire",
+                  "fr_male":"Hugo",
+                  "ru_female":"Анна",
+                  "ru_male":"Иван",
+                  "tr_female":"Elif",
+                  "tr_male":"Mert"
+                }[($lc + "_" + $g)] // ($g | ascii_upcase))
+              };
+
+            # Dedupe by (language_code, gender): keep the newest asset so
+            # re-runs across multiple releases never produce duplicates.
+            ($assets[0]
+              | map(. + (voice_info(.name)))
+              | group_by(.code + "_" + .gender)
+              | map(sort_by(.created_at) | last)
+            ) as $picked |
+
+            {
+              schema_version: 2,
+              generated_at: (now | todateiso8601),
+              repo: $repo,
+              source_run_id: $source_run_id,
+              voices: [
+                $picked[]
+                | {
+                    name: .name,
+                    language_code: .code,
+                    language: .language,
+                    gender: .gender,
+                    gender_label: .gender_fa,
+                    voice_name: .voice_name,
+                    display_name: (.language + " " + .gender_fa + " " + .voice_name),
+                    size: .size,
+                    content_type: .content_type,
+                    download_url: .browser_download_url,
+                    release_tag: .release_tag,
+                    release_id: .release_id,
+                    release_draft: .release_draft,
+                    release_upload_url: .release_upload_url,
+                    release_url: .release_html_url,
+                    created_at: .created_at,
+                    updated_at: .updated_at
+                  }
+              ] | sort_by(.language_code, .gender)
+            }' > dist/manifest.json
+
+          jq -e '.voices | length > 0' dist/manifest.json >/dev/null
+          echo "Generated manifest for $(jq '.voices | length' dist/manifest.json) voices."
+          jq 'del(.voices[].release_upload_url)' dist/manifest.json
+
+      - name: Resolve target release for manifest upload
+        id: target
+        run: |
+          set -euo pipefail
+
+          if [ -n "${{ inputs.release_tag }}" ]; then
+            picked="$(jq --arg tag "${{ inputs.release_tag }}" '[.voices[] | select(.release_tag == $tag)] | first // (.voices | first)' dist/manifest.json)"
+          else
+            picked="$(jq '.voices | sort_by(.updated_at) | last' dist/manifest.json)"
+          fi
+
+          release_id="$(jq -r '.release_id' <<<"$picked")"
+          upload_url="$(jq -r '.release_upload_url' <<<"$picked" | sed 's/{?name,label}//')"
+
+          echo "release_id=$release_id" >> "$GITHUB_OUTPUT"
+          echo "upload_url=$upload_url" >> "$GITHUB_OUTPUT"
+          echo "Target release id=$release_id"
+
+      - name: Replace only manifest.json in release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VOICE_REPO: ${{ inputs.voice_repo }}
+          RELEASE_ID: ${{ steps.target.outputs.release_id }}
+          UPLOAD_URL: ${{ steps.target.outputs.upload_url }}
+        run: |
+          set -euo pipefail
+
+          # Remove an old manifest.json asset only, by id. Never touch any
+          # .abv asset. Works for draft releases too since we go by asset id
+          # and this release's own upload_url, not tag-based `gh release`
+          # commands (which can miss drafts).
+          gh api --paginate "repos/$VOICE_REPO/releases/$RELEASE_ID/assets" \
+            --jq '.[] | select(.name == "manifest.json") | .id' |
+          while read -r asset_id; do
+            [ -z "$asset_id" ] && continue
+            echo "Removing old manifest.json (asset $asset_id)"
+            gh api --method DELETE "repos/$VOICE_REPO/releases/assets/$asset_id"
+          done
+
+          gh api \
+            --method POST \
+            -H "Content-Type: application/json" \
+            "${UPLOAD_URL}?name=manifest.json" \
+            --input dist/manifest.json > /dev/null
+
+          echo "Uploaded manifest.json to release id=$RELEASE_ID"
+
+      - name: Upload manifest as workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: rebuilt-voice-manifest
+          path: dist/manifest.json
